@@ -16,6 +16,8 @@ $defautl-button-height: 30px;
 $default-button-width: 75px;
 $default-avatar-width: 80px;
 $default-action-image: 30px;
+$default-submenu-width: 200px;
+$default-submenu-height: 30px;
 
 body {
     background-color: $body-bakground;
@@ -89,17 +91,19 @@ button:hover {
 #left-head {
 	width: 50%;
 	float: left;
+	
 }
 
 #right-head {
 	width: 50%;
 	float: left;
+
 }
 
 #left-head .head-element {
 	float: left;
 	height: 100%;
-
+	position: relative;
 	h2 {
 		line-height: $top-head-height;
 		padding-left: $default-padding;
@@ -117,10 +121,40 @@ button:hover {
 #right-head .head-element {
 	float: right;
 	height: 100%;
-
+	cursor: pointer;
+	position: relative;
 	img {
 		width: $top-head-height*0.6;
 		margin-top: $top-head-height*0.2;
+		padding-left: $default-padding;
+		padding-right: $default-padding;
+	}
+}
+
+#right-head .head-element:hover .sub-menu {
+	display: block;
+}
+
+.sub-menu {
+	background-color: $default-box-color;
+	position: absolute;
+	top: $top-head-height*0.8;
+	width: $default-submenu-width;
+	left: ($top-head-height*0.6 - $default-submenu-width)/2;
+	padding:  $default-padding;
+	border: solid 1px $main-color;
+	display: none;
+
+	li {
+		height: $default-submenu-height;
+		line-height: $default-submenu-height;
+		border-bottom: solid 1px $default-border-color;
+		padding: $default-padding;
+	}
+
+	li:hover {
+		color: $h-color;
+		background-color: $main-color;
 	}
 }
 
