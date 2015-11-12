@@ -1,4 +1,5 @@
 $h1-color: #123123;
+$p-color: #cccccc;
 $body-bakground: #e9e8e4;
 $container-width: 1000px;
 $main-color: #4c77a4;
@@ -18,6 +19,9 @@ $default-avatar-width: 80px;
 $default-action-image: 30px;
 $default-submenu-width: 200px;
 $default-submenu-height: 30px;
+$default-footer-height: 150px;
+$default-logo-size: 150px;
+$default-social-icon-size: 40px;
 
 body {
     background-color: $body-bakground;
@@ -57,6 +61,15 @@ button, select, input {
 button:hover {
 	color: $h-color;
 	background-color: $main-color;
+}
+
+.light-button {
+	color: $main-color;
+	background-color: $default-box-color;
+}
+
+.center-content {
+	text-align: center;
 }
 
 .clr {
@@ -215,6 +228,38 @@ button:hover {
 	width: 100%;
 }
 
+.sidebar-widget {
+	padding: $default-padding;
+}
+
+.widget-thumb {
+	width: 80%;
+	padding: 10%;
+	border-bottom: solid 1px $default-border-color
+}
+
+.widget-title {
+	color: $default-font-color;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1em;
+	padding-top: $default-padding;
+	padding-bottom: $default-padding;
+}
+
+.widget-des {
+	padding: $default-padding;
+}
+
+.read-more {
+	font-size: 0.8em;
+	font-style: italic;
+	width: 100%;
+	text-align: right;
+	text-decoration: underline;
+	color: $main-color;
+}
+
 .action-button-box {
 	text-align: center;
 }
@@ -340,3 +385,52 @@ button:hover {
 .comment-activity-section {
 	margin-bottom: $default-margin;
 }
+
+
+#footer {
+	width: 100%;
+}
+
+#wrap-footer {
+	min-height: $default-footer-height;
+	background-color: $main-color;
+	width: 100%;
+	margin-bottom: $default-margin*2;
+}
+
+.footer-logo {
+	width: $default-logo-size;
+	height: $default-logo-size;
+}
+
+.footer-widget {
+	width: 33.33%;
+	float: left;
+}
+
+.footer-widget .widget-title {
+	color: $h-color;
+}
+
+.footer-widget .widget-des {
+	color: $p-color;
+}
+
+.footer-widget .social-icon-list {
+	width: 100%;
+	float: left;
+	li {
+		float: left;
+		cursor: pointer;
+		img {
+			width: $default-social-icon-size;
+			padding: $default-padding/2;
+		}
+	}
+
+	li:hover img{
+		border-radius: $default-social-icon-size/2;
+	}
+
+}
+

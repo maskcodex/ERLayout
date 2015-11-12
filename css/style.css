@@ -32,6 +32,13 @@ button:hover {
   color: #ffffff;
   background-color: #4c77a4; }
 
+.light-button {
+  color: #4c77a4;
+  background-color: #ffffff; }
+
+.center-content {
+  text-align: center; }
+
 .clr {
   clear: both; }
 
@@ -156,6 +163,33 @@ button:hover {
   margin-bottom: 8px;
   width: 100%; }
 
+.sidebar-widget {
+  padding: 8px; }
+
+.widget-thumb {
+  width: 80%;
+  padding: 10%;
+  border-bottom: solid 1px #ececec; }
+
+.widget-title {
+  color: #999999;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.widget-des {
+  padding: 8px; }
+
+.read-more {
+  font-size: 0.8em;
+  font-style: italic;
+  width: 100%;
+  text-align: right;
+  text-decoration: underline;
+  color: #4c77a4; }
+
 .action-button-box {
   text-align: center; }
 
@@ -253,5 +287,40 @@ button:hover {
 
 .comment-activity-section {
   margin-bottom: 8px; }
+
+#footer {
+  width: 100%; }
+
+#wrap-footer {
+  min-height: 150px;
+  background-color: #4c77a4;
+  width: 100%;
+  margin-bottom: 16px; }
+
+.footer-logo {
+  width: 150px;
+  height: 150px; }
+
+.footer-widget {
+  width: 33.33%;
+  float: left; }
+
+.footer-widget .widget-title {
+  color: #ffffff; }
+
+.footer-widget .widget-des {
+  color: #cccccc; }
+
+.footer-widget .social-icon-list {
+  width: 100%;
+  float: left; }
+  .footer-widget .social-icon-list li {
+    float: left;
+    cursor: pointer; }
+    .footer-widget .social-icon-list li img {
+      width: 40px;
+      padding: 4px; }
+  .footer-widget .social-icon-list li:hover img {
+    border-radius: 20px; }
 
 /*# sourceMappingURL=style.css.map */
