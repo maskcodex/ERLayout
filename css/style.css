@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 ul {
   list-style: none;
   padding: 0;
@@ -38,6 +42,20 @@ button:hover {
 
 .center-content {
   text-align: center; }
+
+.load-more {
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #4c77a4;
+  color: #ffffff; }
+
+.load-more:hover {
+  color: inherit;
+  box-sizing: content-box; }
+
+.user-name {
+  color: #4c77a4; }
 
 .clr {
   clear: both; }
@@ -83,7 +101,9 @@ button:hover {
   width: 300px;
   background-color: #ffffff;
   height: 25px;
-  margin-top: 12.5px; }
+  margin-top: 12.5px;
+  line-height: 25px;
+  cursor: auto; }
 
 #right-head .head-element {
   float: right;
@@ -157,7 +177,7 @@ button:hover {
   float: left; }
 
 .box-content, .sidebar-box {
-  min-height: 100px;
+  min-height: 10px;
   background-color: #ffffff;
   border: solid 1px #ececec;
   margin-bottom: 8px;
@@ -248,7 +268,18 @@ button:hover {
 
 .activity-info {
   width: 100%;
-  border-bottom: solid 1px #ececec; }
+  border-bottom: solid 1px #ececec;
+  position: relative; }
+
+.activity-icon {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 30px;
+  height: 30px; }
+  .activity-icon img {
+    width: 100%;
+    height: 100%; }
 
 .activity-avatar {
   width: 7%;
@@ -322,5 +353,51 @@ button:hover {
       padding: 4px; }
   .footer-widget .social-icon-list li:hover img {
     border-radius: 20px; }
+
+.comment-section {
+  width: 100%;
+  background-color: #ececec;
+  margin-top: 8px; }
+
+.user-comment-box {
+  padding: 8px; }
+
+.commenter-avatar {
+  width: 5%;
+  float: left; }
+
+.commenter-avatar img {
+  width: 100%; }
+
+.commenter-post {
+  width: 94%;
+  float: left;
+  margin-left: 1%; }
+
+.commenter-post input[type="text"] {
+  cursor: auto;
+  width: 98%;
+  background-color: #ffffff;
+  padding: 1%; }
+
+.list-comments {
+  padding: 8px; }
+
+.comment-view {
+  padding-top: 4px;
+  padding-bottom: 4px; }
+
+.incomment-action {
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 4px; }
+
+.incomment-action:hover {
+  color: #4c77a4; }
+
+.comment-reply-section {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-bottom: solid 1px #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
