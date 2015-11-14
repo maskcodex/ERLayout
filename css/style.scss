@@ -12,7 +12,7 @@ $default-radius: 5px;
 $default-border-color: #ececec;
 $default-box-color: #ffffff;
 $default-font-color: #999999;
-$box-min-height: 100px;
+$box-min-height: 10px;
 $defautl-button-height: 30px;
 $default-button-width: 75px;
 $default-avatar-width: 80px;
@@ -22,6 +22,7 @@ $default-submenu-height: 30px;
 $default-footer-height: 150px;
 $default-logo-size: 150px;
 $default-social-icon-size: 40px;
+$default-activity-icon-size: 30px;
 
 body {
     background-color: $body-bakground;
@@ -34,6 +35,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 ul {
@@ -72,6 +78,23 @@ button:hover {
 	text-align: center;
 }
 
+.load-more {
+	padding: $default-padding;
+	text-align: center;
+	cursor: pointer;
+	background-color: $main-color;
+	color: $h-color;
+}
+
+.load-more:hover {
+	color: inherit;
+	box-sizing: content-box;
+}
+
+.user-name {
+	color: $main-color;
+}
+
 .clr {
     clear: both;
 }
@@ -81,6 +104,8 @@ button:hover {
 	-webkit-transition-duration : 400ms;
 }
 
+
+// page
 #wrap-all {
 	width: 100%;
 }
@@ -129,6 +154,8 @@ button:hover {
 	background-color: $default-box-color;
 	height: $top-head-height*0.5;
 	margin-top: $top-head-height*0.25;
+	line-height: $top-head-height*0.5;
+	cursor: auto;
 }
 
 #right-head .head-element {
@@ -334,7 +361,23 @@ button:hover {
 .activity-info {
 	width: 100%;
 	border-bottom: solid 1px $default-border-color;
+	position: relative;
 }
+
+.activity-icon {
+	position: absolute;
+	right: $default-padding*2;
+	top: $default-padding*2;
+	width: $default-activity-icon-size;
+	height: $default-activity-icon-size;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
 
 .activity-avatar {
 	width: 7%;
@@ -386,7 +429,6 @@ button:hover {
 	margin-bottom: $default-margin;
 }
 
-
 #footer {
 	width: 100%;
 }
@@ -428,9 +470,66 @@ button:hover {
 		}
 	}
 
-	li:hover img{
+	li:hover img {
 		border-radius: $default-social-icon-size/2;
 	}
 
 }
 
+// COMMENT SECTION
+.comment-section {
+	width: 100%;
+	background-color: $default-border-color;
+	margin-top: $default-margin;
+}
+
+.user-comment-box {
+	padding: $default-padding;
+}
+
+.commenter-avatar {
+	width: 5%;
+	float: left;
+}
+
+.commenter-avatar img {
+	width: 100%;
+}
+
+.commenter-post {
+	width: 94%;
+	float: left;
+	margin-left: 1%;
+}
+
+.commenter-post input[type="text"] {
+	cursor: auto;
+	width: 98%;
+	background-color: $default-box-color;
+	padding: 1%;
+}
+
+.list-comments {
+	padding: $default-padding;
+}
+
+.comment-view {
+	padding-top: $default-padding/2;
+	padding-bottom: $default-padding/2;
+}
+
+.incomment-action {
+	font-size: 0.8em;
+	cursor: pointer;
+	padding: $default-padding/2;
+}
+
+.incomment-action:hover {
+	color: $main-color;
+}
+
+.comment-reply-section {
+	margin-top: $default-margin*1.5;
+	margin-bottom: $default-margin*1.5;
+	border-bottom: solid 1px $h-color;
+}
