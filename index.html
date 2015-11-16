@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="font/font.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	
+	<script src="js/index.js"></script>
 </head>
 <body>
 	<div id='wrap-all'>
@@ -250,10 +250,10 @@
 						</ul>
 									
 										<form action="http://everydayread.com/activity/reply/" method="post" id="ac-form-158" class="ac-form">
-											<div class="ac-reply-avatar"><img src="//www.gravatar.com/avatar/e2044a9970b262bcb2e11c82bc2ea820?d=mm&amp;s=50&amp;r=G" class="avatar user-14-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Anh Vu" /></div>
+											<div class="ac-reply-avatar"><img src="images/post-avatar.jpg" class="avatar user-14-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Anh Vu" /></div>
 											<div class="ac-reply-content">
 												<div class="ac-textarea">
-													<textarea id="ac-input-158" class="ac-input bp-suggestions" name="ac_input_158"></textarea>
+													<textarea onkeyup="auto_grow(this)" onfocus="auto_grow(this)" rows="1" id="ac-input-158" class="ac-input bp-suggestions" name="ac_input_158"></textarea>
 												</div>
 												<input type="submit" name="ac_form_submit" value="Post" /> &nbsp; <a href="#" class="ac-reply-cancel button">Cancel</a>
 												<input  type="hidden" name="comment_form_id" value="158" />

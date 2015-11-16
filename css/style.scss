@@ -561,6 +561,7 @@ button:hover {
 
 	ul li ul {
 		margin-left: 5%;
+		margin-bottom: $default-margin;
 		padding: $default-padding/2;
 		border-left: solid 2px $main-color;
 	}
@@ -601,11 +602,25 @@ button:hover {
 
 .ac-reply-content textarea {
 	width: 96%;
-	margin: 2%;
-	height: $defautl-button-height;
+	margin-left: 2%;
+	min-height: $defautl-button-height;
 	line-height: $defautl-button-height;
 	border-radius: $default-radius;
 	border: solid 1px $default-border-color;
+	overflow: hidden;
+	resize:none; 
+    max-height: $defautl-button-height*5;
+}
+
+.textarea-hiddendiv {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+}
+
+.lbr {
+	line-height: $defautl-button-height;
 }
 
 .ac-reply-content input {
@@ -617,41 +632,6 @@ button:hover {
 	cursor: pointer;
 	min-width: $default-button-width;
 	margin-left: 2%;
-}
-
-.user-comment-box {
-	padding: $default-padding;
-}
-
-.commenter-avatar {
-	width: 5%;
-	float: left;
-}
-
-.commenter-avatar img {
-	width: 100%;
-}
-
-.commenter-post {
-	width: 94%;
-	float: left;
-	margin-left: 1%;
-}
-
-.commenter-post input[type="text"] {
-	cursor: auto;
-	width: 98%;
-	background-color: $default-box-color;
-	padding: 1%;
-}
-
-.list-comments {
-	padding: $default-padding;
-}
-
-.comment-view {
-	padding-top: $default-padding/2;
-	padding-bottom: $default-padding/2;
 }
 
 .incomment-action {
@@ -666,12 +646,6 @@ button:hover {
 
 .acomment-options {
 	margin-bottom: $default-margin;
-}
-
-.comment-reply-section {
-	margin-top: $default-margin*1.5;
-	margin-bottom: $default-margin*1.5;
-	border-bottom: solid 1px $h-color;
 }
 
 .activity-type-tabs {

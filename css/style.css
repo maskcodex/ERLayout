@@ -414,6 +414,7 @@ button:hover, .button:hover {
     margin-bottom: 8px; }
   .activity-comments ul li ul {
     margin-left: 5%;
+    margin-bottom: 8px;
     padding: 4px;
     border-left: solid 2px #4c77a4; }
   .activity-comments ul li ul li .acomment-avatar, .activity-comments ul li ul li .ac-reply-avatar {
@@ -441,11 +442,24 @@ button:hover, .button:hover {
 
 .ac-reply-content textarea {
   width: 96%;
-  margin: 2%;
-  height: 30px;
+  margin-left: 2%;
+  min-height: 30px;
   line-height: 30px;
   border-radius: 5px;
-  border: solid 1px #ececec; }
+  border: solid 1px #ececec;
+  overflow: hidden;
+  resize: none;
+  max-height: 150px; }
+
+.textarea-hiddendiv {
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* future version of deprecated 'word-wrap' */ }
+
+.lbr {
+  line-height: 30px; }
 
 .ac-reply-content input {
   height: 30px;
@@ -457,34 +471,6 @@ button:hover, .button:hover {
   min-width: 75px;
   margin-left: 2%; }
 
-.user-comment-box {
-  padding: 8px; }
-
-.commenter-avatar {
-  width: 5%;
-  float: left; }
-
-.commenter-avatar img {
-  width: 100%; }
-
-.commenter-post {
-  width: 94%;
-  float: left;
-  margin-left: 1%; }
-
-.commenter-post input[type="text"] {
-  cursor: auto;
-  width: 98%;
-  background-color: #ffffff;
-  padding: 1%; }
-
-.list-comments {
-  padding: 8px; }
-
-.comment-view {
-  padding-top: 4px;
-  padding-bottom: 4px; }
-
 .incomment-action {
   font-size: 0.8em;
   cursor: pointer;
@@ -495,11 +481,6 @@ button:hover, .button:hover {
 
 .acomment-options {
   margin-bottom: 8px; }
-
-.comment-reply-section {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  border-bottom: solid 1px #ffffff; }
 
 .activity-type-tabs {
   width: 100%;
