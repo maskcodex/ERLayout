@@ -23,7 +23,7 @@ p {
   margin: 0;
   padding: 0; }
 
-button, .button, select, input {
+button, .button, #right-head .head-element a.header-link, select, input {
   height: 30px;
   line-height: 30px;
   color: #999999;
@@ -33,14 +33,14 @@ button, .button, select, input {
   cursor: pointer;
   min-width: 75px; }
 
-button:hover, .button:hover {
+button:hover, .button:hover, #right-head .head-element a.header-link:hover {
   color: #ffffff;
   background-color: #4c77a4; }
 
-.button {
+.button, #right-head .head-element a.header-link {
   padding: 6px; }
 
-.light-button {
+.light-button, #right-head .head-element a.header-link {
   color: #4c77a4;
   background-color: #ffffff; }
 
@@ -141,17 +141,15 @@ button:hover, .button:hover {
   height: 100%;
   cursor: pointer;
   position: relative;
-  width: 30px;
   height: 30px;
   margin-top: 10px;
   padding-left: 8px;
   padding-right: 8px; }
   #right-head .head-element img {
-    width: 100%;
-    height: 100%; }
-  #right-head .head-element a {
-    line-height: 30px;
-    color: #ffffff; }
+    width: 30px;
+    height: 30px; }
+  #right-head .head-element a.header-link {
+    line-height: 30px; }
 
 #right-head .head-element:hover .sub-menu {
   display: block; }
@@ -257,7 +255,7 @@ button:hover, .button:hover {
 .action-button-box {
   text-align: center; }
 
-.action-button-box button.main-button, .action-button-box .main-button.button {
+.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link {
   display: inline-block;
   margin-bottom: 8px;
   margin-top: 8px;

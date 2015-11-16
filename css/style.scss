@@ -208,20 +208,21 @@ button:hover {
 	height: 100%;
 	cursor: pointer;
 	position: relative;
-	width: $top-head-height*0.6;
+	//min-width: $top-head-height*0.6;
 	height: $top-head-height*0.6;
 	margin-top: $top-head-height*0.2;
 	padding-left: $default-padding;
 	padding-right: $default-padding;
 
 	img {
-		width: 100%;
-		height: 100%;
+		width: $top-head-height*0.6;
+		height: $top-head-height*0.6;
 	}
 
-	a {
+	a.header-link {
 		line-height: $top-head-height*0.6;
-		color: $h-color;
+		@extend .light-button;
+		@extend .button;
 	}
 }
 
