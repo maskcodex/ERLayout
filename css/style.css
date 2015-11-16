@@ -58,11 +58,11 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
   color: inherit;
   box-sizing: content-box; }
 
-.link, .link-underline, .user-name, .activity-type-tabs ul li.selected {
+.link, .link-underline, .user-name, .acomment-meta a, .activity-type-tabs ul li.selected {
   color: #0033ff;
   cursor: pointer; }
 
-.link:hover, .link-underline:hover, .user-name:hover, .activity-type-tabs ul li.selected:hover {
+.link:hover, .link-underline:hover, .user-name:hover, .acomment-meta a:hover, .activity-type-tabs ul li.selected:hover {
   text-decoration: underline; }
 
 .link-underline {
@@ -71,10 +71,10 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
 .link-underline:hover {
   padding-left: 4px; }
 
-.user-name {
+.user-name, .acomment-meta a {
   font-weight: bold; }
 
-.stats-style {
+.stats-style, .acomment-meta a span {
   font-size: 0.8em;
   line-height: 2em; }
 
@@ -406,8 +406,9 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
   margin-top: 8px; }
 
 .activity-comments {
-  padding: 4px;
   color: #666666; }
+  .activity-comments ul:first-child, .activity-comments form {
+    padding: 4px; }
   .activity-comments ul li {
     margin-bottom: 8px; }
   .activity-comments ul li ul {
@@ -469,12 +470,11 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
   min-width: 75px;
   margin-left: 2%; }
 
-.incomment-action {
+.incomment-action, .acomment-options a {
   font-size: 0.8em;
   cursor: pointer;
-  padding: 4px; }
-
-.incomment-action:hover {
+  padding: 4px;
+  text-decoration: underline;
   color: #4c77a4; }
 
 .acomment-options {

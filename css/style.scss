@@ -553,8 +553,12 @@ button:hover {
 }
 
 .activity-comments {
-	padding: $default-padding/2;
+	//padding: $default-padding/2;
 	color: $dark-color;
+
+	ul:first-child, form {
+		padding: $default-padding/2;
+	}
 
 	ul li {
 		margin-bottom: $default-margin;
@@ -588,6 +592,16 @@ button:hover {
 	img {
 		width: 100%;
 		height: 100%;
+	}
+}
+
+.acomment-meta {
+	a {
+		@extend .user-name;
+	}
+
+	a span {
+		@extend .stats-style;
 	}
 }
 
@@ -639,10 +653,14 @@ button:hover {
 	font-size: 0.8em;
 	cursor: pointer;
 	padding: $default-padding/2;
+	text-decoration: underline;
+	color: $main-color;
 }
 
-.incomment-action:hover {
-	color: $main-color;
+.acomment-options {
+	a {
+		@extend .incomment-action;
+	}
 }
 
 .acomment-options {
