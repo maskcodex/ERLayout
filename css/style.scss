@@ -1,9 +1,11 @@
 $h1-color: #123123;
 $p-color: #cccccc;
+$dark-color: #666666;
 $body-bakground: #e9e8e4;
 $container-width: 1000px;
 $main-color: #4c77a4;
 $h-color: #ffffff;
+$link-color: #0033ff;
 $top-head-height: 50px;
 $main-menu-height: 50px;
 $default-margin: 8px;
@@ -28,6 +30,7 @@ body {
     background-color: $body-bakground;
     margin: 0;
     padding: 0;
+    color: $default-font-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,6 +72,11 @@ button:hover {
 	background-color: $main-color;
 }
 
+.button {
+	@extend button;
+	padding: 6px;
+}
+
 .light-button {
 	color: $main-color;
 	background-color: $default-box-color;
@@ -91,8 +99,45 @@ button:hover {
 	box-sizing: content-box;
 }
 
+.link {
+	color: $link-color;
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.link-underline {
+	@extend .link;
+	text-decoration: underline;
+}
+
+.link-underline:hover {
+	padding-left: $default-padding/2;
+}
+
 .user-name {
+	@extend .link;
+	font-weight: bold;
+}
+
+.stats-style {
+	font-size: 0.8em;
+	line-height: 2em;
+}
+
+.dark-color-style {
+	font-weight: bold;
+	color: $dark-color;
+}
+
+.number {
 	color: $main-color;
+}
+
+.border-bottom {
+	border-bottom: 1px solid $default-border-color;
 }
 
 .clr {
@@ -163,11 +208,20 @@ button:hover {
 	height: 100%;
 	cursor: pointer;
 	position: relative;
+	width: $top-head-height*0.6;
+	height: $top-head-height*0.6;
+	margin-top: $top-head-height*0.2;
+	padding-left: $default-padding;
+	padding-right: $default-padding;
+
 	img {
-		width: $top-head-height*0.6;
-		margin-top: $top-head-height*0.2;
-		padding-left: $default-padding;
-		padding-right: $default-padding;
+		width: 100%;
+		height: 100%;
+	}
+
+	a {
+		line-height: $top-head-height*0.6;
+		color: $h-color;
 	}
 }
 
@@ -178,14 +232,14 @@ button:hover {
 .sub-menu {
 	background-color: $default-box-color;
 	position: absolute;
-	top: $top-head-height*0.8;
+	top: $top-head-height*0.5;
 	width: $default-submenu-width;
 	left: ($top-head-height*0.6 - $default-submenu-width)/2;
 	padding:  $default-padding;
 	border: solid 1px $main-color;
 	display: none;
 
-	li {
+	li, a {
 		height: $default-submenu-height;
 		line-height: $default-submenu-height;
 		border-bottom: solid 1px $default-border-color;
@@ -255,14 +309,24 @@ button:hover {
 	width: 100%;
 }
 
+.user-relationship {
+	padding: $default-padding;
+}
+
 .sidebar-widget {
 	padding: $default-padding;
 }
 
 .widget-thumb {
 	width: 80%;
+	height: 120%;
 	padding: 10%;
-	border-bottom: solid 1px $default-border-color
+	border-bottom: solid 1px $default-border-color;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .widget-title {
@@ -304,10 +368,12 @@ button:hover {
 
 .post-avatar {
 	width: 10%;
+	height: 10%;
 	padding: $default-padding;
 	float: left;
 	img {
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -400,9 +466,11 @@ button:hover {
 
 .activity-content .activity-book-content-cover {
 	width: 25%;
+	height: 37.5%;
 	float: left;
 	img {
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -533,3 +601,34 @@ button:hover {
 	margin-bottom: $default-margin*1.5;
 	border-bottom: solid 1px $h-color;
 }
+
+.activity-type-tabs {
+	width: 100%;
+	clear: both;
+
+
+	ul {
+		width: 100%;
+		clear: both;
+		float: left;
+		margin-bottom: $default-margin;
+		padding: $default-padding/2;
+	}
+
+	ul li {
+		float: left;
+		padding: $default-padding/2;
+		height: $defautl-button-height;
+		line-height: $defautl-button-height;
+	}
+
+	ul li.selected {
+		@extend .link;
+	}
+
+	ul li:hover {
+		color: $main-color;
+	}
+}
+
+
