@@ -383,7 +383,7 @@ button:hover {
 	padding: $default-padding;
 }
 
-.post-content textarea {
+.post-content textarea{
 	width: 100%;
 	height: $default-avatar-width;
 	border-radius: $default-radius;
@@ -551,6 +551,74 @@ button:hover {
 	margin-top: $default-margin;
 }
 
+.activity-comments {
+	padding: $default-padding/2;
+	color: $dark-color;
+
+	ul li {
+		margin-bottom: $default-margin;
+	}
+
+	ul li ul {
+		margin-left: 5%;
+		padding: $default-padding/2;
+		border-left: solid 2px $main-color;
+	}
+
+	ul li ul li .acomment-avatar {
+		width: 3%;
+		height: 3%;
+	}
+
+	ul li ul li .acomment-avatar img {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+.acomment-avatar {
+	width: 5%;
+	height: 5%;
+	float: left;
+	margin-right: $default-margin;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.ac-reply-avatar {
+	@extend .acomment-avatar;
+	margin: 0;
+}
+
+.ac-reply-content {
+	width: 95%;
+	display: inline-block;
+}
+
+.ac-reply-content textarea {
+	width: 96%;
+	margin: 2%;
+	height: $defautl-button-height;
+	line-height: $defautl-button-height;
+	border-radius: $default-radius;
+	border: solid 1px $default-border-color;
+}
+
+.ac-reply-content input {
+	height: $defautl-button-height;
+	line-height: $defautl-button-height;
+	color: $h-color;
+	border-radius: $default-radius;
+	background-color: $main-color;
+	cursor: pointer;
+	min-width: $default-button-width;
+	margin-left: 2%;
+}
+
 .user-comment-box {
 	padding: $default-padding;
 }
@@ -594,6 +662,10 @@ button:hover {
 
 .incomment-action:hover {
 	color: $main-color;
+}
+
+.acomment-options {
+	margin-bottom: $default-margin;
 }
 
 .comment-reply-section {

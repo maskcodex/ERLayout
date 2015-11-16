@@ -407,6 +407,56 @@ button:hover, .button:hover {
   background-color: #ececec;
   margin-top: 8px; }
 
+.activity-comments {
+  padding: 4px;
+  color: #666666; }
+  .activity-comments ul li {
+    margin-bottom: 8px; }
+  .activity-comments ul li ul {
+    margin-left: 5%;
+    padding: 4px;
+    border-left: solid 2px #4c77a4; }
+  .activity-comments ul li ul li .acomment-avatar, .activity-comments ul li ul li .ac-reply-avatar {
+    width: 3%;
+    height: 3%; }
+  .activity-comments ul li ul li .acomment-avatar img, .activity-comments ul li ul li .ac-reply-avatar img {
+    width: 100%;
+    height: 100%; }
+
+.acomment-avatar, .ac-reply-avatar {
+  width: 5%;
+  height: 5%;
+  float: left;
+  margin-right: 8px; }
+  .acomment-avatar img, .ac-reply-avatar img {
+    width: 100%;
+    height: 100%; }
+
+.ac-reply-avatar {
+  margin: 0; }
+
+.ac-reply-content {
+  width: 95%;
+  display: inline-block; }
+
+.ac-reply-content textarea {
+  width: 96%;
+  margin: 2%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: solid 1px #ececec; }
+
+.ac-reply-content input {
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #4c77a4;
+  cursor: pointer;
+  min-width: 75px;
+  margin-left: 2%; }
+
 .user-comment-box {
   padding: 8px; }
 
@@ -442,6 +492,9 @@ button:hover, .button:hover {
 
 .incomment-action:hover {
   color: #4c77a4; }
+
+.acomment-options {
+  margin-bottom: 8px; }
 
 .comment-reply-section {
   margin-top: 12px;
