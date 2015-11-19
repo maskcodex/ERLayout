@@ -1,6 +1,7 @@
 $h1-color: #123123;
 $p-color: #cccccc;
 $dark-color: #666666;
+$orange-color: #eb7b4b;
 $body-bakground: #e9e8e4;
 $container-width: 1000px;
 $main-color: #4c77a4;
@@ -11,7 +12,7 @@ $main-menu-height: 50px;
 $default-margin: 8px;
 $default-padding: 8px;
 $default-radius: 5px;
-$default-border-color: #ececec;
+$default-border-color: #ccc;
 $default-box-color: #ffffff;
 $default-font-color: #999999;
 $box-min-height: 10px;
@@ -24,7 +25,11 @@ $default-submenu-height: 30px;
 $default-footer-height: 150px;
 $default-logo-size: 150px;
 $default-social-icon-size: 40px;
-$default-activity-icon-size: 30px;
+$default-activity-icon-size: 50px;
+
+$comment-color: #00ffff;
+$quote-color: #ff3300;
+$share-color: #0033ff;
 
 body {
     background-color: $body-bakground;
@@ -80,6 +85,15 @@ button:hover {
 .light-button {
 	color: $main-color;
 	background-color: $default-box-color;
+}
+
+.orange-button {
+	color: $h-color;
+	background-color: $orange-color;
+}
+
+.disabled-button {
+	background-color: $dark-color;
 }
 
 .center-content {
@@ -696,4 +710,94 @@ button:hover {
 	}
 }
 
+.activity-inner {
+	padding: $default-padding;
 
+	img {
+		float: left;
+		widows: $default-activity-icon-size;
+		height: $default-activity-icon-size;
+		padding: $default-padding;
+	}
+
+}
+
+.comment-activity-section {
+	border: solid 2px $comment-color;
+}
+
+.quote-activity-section {
+	border: solid 2px $quote-color;
+}
+
+.share-activity-section {
+	border: solid 2px $share-color;
+}
+
+
+
+
+/* BOOK CONTENT */
+
+.book-content {
+	padding: $default-padding;
+}
+
+.book-content h2 {
+	padding: $default-padding;
+}
+
+.book-content-cover {
+	float: left;
+	width: 39%;
+	height:60%;
+	margin-right: 1%;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.book-content-rating {
+	padding: $default-padding;
+}
+
+.book-content-action {
+	padding: $default-padding;
+}
+
+.book-content-rating {
+	font-size: 2em;
+	color: $orange-color;
+}
+
+.book-content-rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+   cursor: pointer;
+}
+
+.book-content-info-nav {
+	ul {
+		height: $main-menu-height;
+		border-bottom: solid 3px $orange-color;
+	}
+
+	ul li {
+		float: left;
+		line-height: $main-menu-height;
+		padding-left: $default-margin;
+		padding-right: $default-margin;
+		cursor: pointer;
+	}
+
+	ul li.activated, li:hover {
+		@extend .orange-button;
+	}
+
+}
+
+.book-content-info-content {
+	padding: $default-padding;
+}
