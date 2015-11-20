@@ -254,11 +254,21 @@ button:hover {
 	border: solid 1px $main-color;
 	display: none;
 
-	li, a {
+	li{
 		height: $default-submenu-height;
 		line-height: $default-submenu-height;
 		border-bottom: solid 1px $default-border-color;
 		padding: $default-padding;
+	}
+	
+	a {
+		height: $default-submenu-height;
+		line-height: $default-submenu-height;
+		border-bottom: $default-border-color;
+		padding: $default-padding;
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 
 	li:hover {
@@ -505,6 +515,10 @@ button:hover {
 }
 
 .comment-book-activity {
+	padding: $default-padding;
+}
+
+.book-activity {
 	padding: $default-padding;
 }
 
