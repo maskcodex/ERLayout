@@ -2,6 +2,7 @@ $h1-color: #123123;
 $p-color: #cccccc;
 $dark-color: #666666;
 $orange-color: #eb7b4b;
+$green-color: #33cc00;
 $body-bakground: #e9e8e4;
 $container-width: 1000px;
 $main-color: #4c77a4;
@@ -26,6 +27,8 @@ $default-footer-height: 150px;
 $default-logo-size: 150px;
 $default-social-icon-size: 40px;
 $default-activity-icon-size: 50px;
+$default-comment-bg: #eef0f1;
+$default-winer-avatar-width: 100px;
 
 $comment-color: #00ffff;
 $quote-color: #ff3300;
@@ -90,6 +93,15 @@ button:hover {
 .orange-button {
 	color: $h-color;
 	background-color: $orange-color;
+}
+
+.green-button {
+	color: $h-color;
+	background-color: $green-color;
+}
+
+.green-border {
+	border: solid 1px $green-color;
 }
 
 .disabled-button {
@@ -576,7 +588,7 @@ button:hover {
 // COMMENT SECTION
 .comment-section {
 	width: 100%;
-	background-color: $default-border-color;
+	background-color: $default-comment-bg;
 	margin-top: $default-margin;
 }
 
@@ -814,4 +826,96 @@ button:hover {
 
 .book-content-info-content {
 	padding: $default-padding;
+}
+
+
+
+/************* BOOK SHARE CONTENT ********************/
+
+.book-share-content {
+	padding: $default-padding;
+}
+
+.book-share-rating {
+	font-size: 2em;
+	color: $green-color;
+}
+
+.book-share-rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+   cursor: pointer;
+}
+
+.timer-coutdown {
+	float: left;
+	padding: $default-padding;
+}
+
+.timer-coutdown h3 {
+	text-align: center;
+	padding: $default-padding;
+}
+
+.share-book-action-section {
+	margin-bottom: $default-margin;
+	margin-top: $default-margin;
+	background-color: $green-color;
+}
+
+.share-book-action-info {
+	float: left;
+}
+
+.number-registred {
+	padding: $default-padding;
+	margin: $default-margin;
+	text-align: center;
+	color: $h-color;
+
+	h3 {
+		font-size: 3em;
+		
+		font-weight: bold;
+	}
+}
+
+.join-get-book {
+	margin: $default-margin;
+	text-align: center;
+}
+
+.share-book-result-section {
+	padding: $default-padding;
+	text-align: center;
+	border: solid 1px $default-border-color;
+	margin-bottom: $default-margin;
+	margin-top: $default-margin;
+
+	img {
+		width: $default-winer-avatar-width;
+		height: $default-winer-avatar-width;
+		border-radius: $default-winer-avatar-width/2;
+		border: solid 3px $green-color;
+		cursor: pointer;
+	}
+}
+
+.book-share-info-nav {
+	ul {
+		height: $main-menu-height;
+		border-bottom: solid 3px $green-color;
+	}
+
+	ul li {
+		float: left;
+		line-height: $main-menu-height;
+		padding-left: $default-margin;
+		padding-right: $default-margin;
+		cursor: pointer;
+	}
+
+	ul li.activated, li:hover {
+		@extend .green-button;
+	}
 }

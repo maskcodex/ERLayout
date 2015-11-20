@@ -48,6 +48,13 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
   color: white;
   background-color: #eb7b4b; }
 
+.green-button, .book-share-info-nav ul li.activated, .book-share-info-nav li:hover {
+  color: white;
+  background-color: #33cc00; }
+
+.green-border {
+  border: solid 1px #33cc00; }
+
 .disabled-button {
   background-color: #666666; }
 
@@ -170,11 +177,19 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
   padding: 8px;
   border: solid 1px #4c77a4;
   display: none; }
-  .sub-menu li, .sub-menu a {
+  .sub-menu li {
     height: 30px;
     line-height: 30px;
     border-bottom: solid 1px #cccccc;
     padding: 8px; }
+  .sub-menu a {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: #cccccc;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    height: 100%; }
   .sub-menu li:hover {
     color: white;
     background-color: #4c77a4; }
@@ -369,6 +384,9 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
 .comment-book-activity {
   padding: 8px; }
 
+.book-activity {
+  padding: 8px; }
+
 .comment-activity-section {
   margin-bottom: 8px; }
 
@@ -409,7 +427,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
 
 .comment-section {
   width: 100%;
-  background-color: #cccccc;
+  background-color: #eef0f1;
   margin-top: 8px; }
 
 .activity-comments {
@@ -564,3 +582,68 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover {
 
 .book-content-info-content {
   padding: 8px; }
+
+/************* BOOK SHARE CONTENT ********************/
+.book-share-content {
+  padding: 8px; }
+
+.book-share-rating {
+  font-size: 2em;
+  color: #33cc00; }
+
+.book-share-rating > span:hover:before {
+  content: "\2605";
+  position: absolute;
+  cursor: pointer; }
+
+.timer-coutdown {
+  float: left;
+  padding: 8px; }
+
+.timer-coutdown h3 {
+  text-align: center;
+  padding: 8px; }
+
+.share-book-action-section {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  background-color: #33cc00; }
+
+.share-book-action-info {
+  float: left; }
+
+.number-registred {
+  padding: 8px;
+  margin: 8px;
+  text-align: center;
+  color: white; }
+  .number-registred h3 {
+    font-size: 3em;
+    font-weight: bold; }
+
+.join-get-book {
+  margin: 8px;
+  text-align: center; }
+
+.share-book-result-section {
+  padding: 8px;
+  text-align: center;
+  border: solid 1px #cccccc;
+  margin-bottom: 8px;
+  margin-top: 8px; }
+  .share-book-result-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: solid 3px #33cc00;
+    cursor: pointer; }
+
+.book-share-info-nav ul {
+  height: 50px;
+  border-bottom: solid 3px #33cc00; }
+.book-share-info-nav ul li {
+  float: left;
+  line-height: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer; }
