@@ -90,6 +90,10 @@ button:hover {
 	background-color: $default-box-color;
 }
 
+.cricle-button {
+	border-radius: 50%;
+}
+
 .orange-button {
 	color: $h-color;
 	background-color: $orange-color;
@@ -164,6 +168,10 @@ button:hover {
 
 .border-bottom {
 	border-bottom: 1px solid $default-border-color;
+}
+
+.border-top {
+	border-top: 1px solid $default-border-color;
 }
 
 .clr {
@@ -804,6 +812,14 @@ button:hover {
    cursor: pointer;
 }
 
+.book-content-user-status {
+	text-align: center;
+	
+	button {
+		margin: $default-margin*3 $default-margin; 
+	}
+}
+
 .book-content-info-nav {
 	ul {
 		height: $main-menu-height;
@@ -826,8 +842,8 @@ button:hover {
 
 .book-content-info-content {
 	padding: $default-padding;
+	background-color: $default-comment-bg;
 }
-
 
 
 /************* BOOK SHARE CONTENT ********************/
@@ -918,4 +934,104 @@ button:hover {
 	ul li.activated, li:hover {
 		@extend .green-button;
 	}
+}
+
+.comment-section #comments {
+	padding: $default-padding;
+	color: $dark-color;
+}
+
+.comment-section .fn {
+	@extend .user-name;
+	line-height: $default-action-image;
+}
+
+.comment-section .comment-meta {
+	@extend .stats-style;
+	margin-left: 5%;
+	margin-right: 5%;
+	@extend .border-bottom;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.comment-section .comment {
+	color: $dark-color;
+	position: relative;
+
+	p {
+		padding-left: 5%;
+	}
+
+}
+
+.comment-section .comment .reply {
+	@extend .incomment-action;
+}
+
+.comment-section #respond {
+	padding: $default-padding;
+	@extend .border-top;
+
+	h3 {
+		color: $dark-color;
+	}
+
+	form p {
+		padding-bottom: $default-padding;
+		padding-top: $default-padding;
+	}
+
+	form p a:first-child {
+		@extend .user-name;
+	}
+
+	form p a:last-child {
+		@extend .incomment-action;
+	}
+
+	textarea {
+		width: 96%;
+		margin-left: 2%;
+		height: $defautl-button-height;
+		line-height: $defautl-button-height;
+		border-radius: $default-radius;
+		border: solid 1px $default-border-color;
+		overflow: hidden;
+		resize:none; 
+	    max-height: $defautl-button-height*5;
+	}
+
+	input[type="submit"] {
+		@extend button;
+	}
+}
+
+.book-share-quick-info {
+	padding: $default-padding;
+
+	h1 {
+		margin: $default-margin 0 $default-margin 0;
+	}
+}
+
+.book-info-cover {
+	float: left;
+	width: 19%;
+	height: 28.5%;
+	margin-right: 1%;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.book-share-quote {
+	border: solid 1px $green-color;
+	float: left;
+	padding: $default-padding;
+	display: inline-block;
+	max-width: 76%;
+	min-height: 28.5%;
 }
