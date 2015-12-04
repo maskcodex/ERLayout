@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+    <title>Everyday Read | Share Book</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <style type="text/css">
+    /* Prevent copy paste for all elements except text fields */
+    
+    * {
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+    
+    input,
+    textarea {
+        -webkit-user-select: text;
+    }
+    
+    body {
+        background-color: white;
+        color: black
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="countdown/styles.css" />
+    <link rel="stylesheet" href="countdown/jquery.countdown.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="countdown/jquery.countdown.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id='wrap-all'>
+        <div id='container'>
+            <header id='header'>
+                <div id='top-head'>
+                    <div id='left-head'>
+                        <div class='head-element'>
+                            <h2><a href="#">EverydayRead</a></h2></div>
+                        <div class='head-element'>
+                            <input type='search' id='main-search'>
+                        </div>
+                    </div>
+                    <div id='right-head'>
+                        <ul>
+                            <li class='head-element'>
+                                <div id="main-avatar"><img src="images/post-avatar.jpg" /></div>
+                            </li>
+                            <li class='head-element'><img src="images/menu.png" />
+                                <ul class='sub-menu'>
+                                    <li>sub menu 1</li>
+                                    <li>sub menu 2</li>
+                                    <li>sub menu 3</li>
+                                    <li>sub menu 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'><img src='images/notify.png' />
+                                <ul class='sub-menu'>
+                                    <li>notification 1</li>
+                                    <li>notification 2</li>
+                                    <li>notification 3</li>
+                                    <li>notification 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'>
+                                <a href="#" class='header-link'>Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+                <div id='menu'>
+                    <nav id='main-menu'>
+                        <ul>
+                            <li>Home</li>
+                            <li>Activity</li>
+                            <li>Followers</li>
+                            <li>Book Shelf</li>
+                            <li>Profile</li>
+                            <li>Reviews</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id='wrap-content' class="full-page">
+                <div class="box-content">
+                    <h1 class="title-page">Sách được chia sẻ</h1>
+                    <div class="books-share-filter border-bottom">
+                        <div class="stats-filter">
+                            <label>Lọc Sách:</label>
+                            <select>
+                                <option>Đã hết hạn</option>
+                                <option>Đang chia sẻ</option>
+                                <option>Lượt đăng ký giảm dần</option>
+                                <option>Lượt đăng ký tăng dần</option>
+                                <option>Reviews cao</option>
+                            </select>
+                            <label>Hiển thị:</label>
+                            <select>
+                                <option>Lưới</option>
+                                <option>Hàng</option>
+                            </select>
+                        </div>
+
+                        <div class="search-filter">
+                            <label>Search: </label>
+                            <input type="text" placeholder="Tìm kiếm sách">
+                        </div>
+                    </div>
+                    <div class="list-books-share">
+                        <div class="book-share-block">
+                            <img src="images/hoavang.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span>Bởi: </span><span class="user-name">Vũ đẹp trai</span> 
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button orange-button">Còn thời gian</span></p>
+                        </div>
+                        <div class="book-share-block">
+                            <img src="images/DaVinciCode.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span>Bởi: </span><span class="user-name">Vũ đẹp trai</span> 
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button orange-button">Còn thời gian</span></p>
+                        </div><div class="book-share-block over-time">
+                            <img src="images/daocuavatly.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span>Bởi: </span><span class="user-name">Vũ đẹp trai</span> 
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button">Hết thời gian</span></p>
+                        </div><div class="book-share-block">
+                            <img src="images/hoavang.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span>Bởi: </span><span class="user-name">Vũ đẹp trai</span>
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button orange-button">Còn thời gian</span></p>
+                        </div><div class="book-share-block">
+                            <img src="images/hoavang.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span class="user-name">Vũ đẹp trai</span> <span>Đã chia sẻ</span>
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button orange-button">Còn thời gian</span></p>
+                        </div><div class="book-share-block">
+                            <img src="images/hoavang.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span class="user-name">Vũ đẹp trai</span> <span>Đã chia sẻ</span>
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button orange-button">Còn thời gian</span></p>
+                        </div><div class="book-share-block">
+                            <img src="images/hoavang.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span class="user-name">Vũ đẹp trai</span> <span>Đã chia sẻ</span>
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button orange-button">Còn thời gian</span></p>
+                        </div><div class="book-share-block">
+                            <img src="images/hoavang.jpg">
+                            <p class="block-book-name">Tôi thấy hoa vàng trên cỏ xanh</p>
+                            <p><span class="user-name">Vũ đẹp trai</span> <span>Đã chia sẻ</span>
+                            </p>
+                            <span class="stats-style">20/11/2015</span>
+                            <p><span>Trạng thái:</span><span class="button orange-button">Còn thời gian</span></p>
+                        </div>
+                        <div class='clr'></div>
+                    </div>
+                    <div class="page-navigation">
+                        <ul>
+                            <li>Prev</li>
+                            <li class="activated">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>Next</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id='footer'>
+            <div id='wrap-footer'>
+                <div class='footer-widget'>
+                    <img class='footer-logo' src="images/erlogo.png" />
+                </div>
+                <div class='footer-widget'>
+                    <h3 class='widget-title'>Everyday Read Team</h3>
+                    <p class='widget-des'>
+                        Địa chỉ: D402, Chung cư Khu KCN Tân Bình
+                        <br/> Điện thoại: 01633449037
+                        <br/> Email: info@everyread.com
+                        <br/>
+                    </p>
+                </div>
+                <div class='footer-widget'>
+                    <h3 class='widget-title'>Liên hệ với Everyday Read </h3>
+                    <p class='widget-des'>
+                        <ul class='social-icon-list'>
+                            <li><img src="images/facebook-icon.png"></li>
+                            <li><img src="images/gplus-icon.png"></li>
+                            <li><img src="images/printerest-icon.png"></li>
+                            <li><img src="images/youtube-icon.png"></li>
+                            <li><img src="images/twitter-icon.png"></li>
+                            <li><img src="images/email-icon.png"></li>
+                        </ul>
+                    </p>
+                    <h3 class='widget-title'>Tài trợ cho Everyday Read</h3>
+                    <p class='widget-des center-content'>
+                        <button class='light-button'>Tài trợ cho chúng tôi</button>
+                    </p>
+                </div>
+                <div class='clr'></div>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>
