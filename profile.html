@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+    <title>Everyday Read</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <style type="text/css">
+    /* Prevent copy paste for all elements except text fields */
+    
+    * {
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+    
+    input,
+    textarea {
+        -webkit-user-select: text;
+    }
+    
+    body {
+        background-color: white;
+        color: black
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id='wrap-all'>
+        <div id='container'>
+            <header id='header'>
+                <div id='top-head'>
+                    <div id='left-head'>
+                        <div class='head-element'>
+                            <h2><a href="#">EverydayRead</a></h2></div>
+                        <div class='head-element'>
+                            <input type='search' id='main-search'>
+                        </div>
+                    </div>
+                    <div id='right-head'>
+                        <ul>
+                            <li class='head-element'>
+                                <div id="main-avatar"><img src="images/post-avatar.jpg" /></div>
+                            </li>
+                            <li class='head-element'><img src="images/menu.png" />
+                                <ul class='sub-menu'>
+                                    <li>sub menu 1</li>
+                                    <li>sub menu 2</li>
+                                    <li>sub menu 3</li>
+                                    <li>sub menu 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'><img src='images/notify.png' />
+                                <ul class='sub-menu'>
+                                    <li>notification 1</li>
+                                    <li>notification 2</li>
+                                    <li>notification 3</li>
+                                    <li>notification 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'>
+                                <a href="#" class='header-link'>Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+                <div id='menu'>
+                    <nav id='main-menu'>
+                        <ul>
+                            <li>Home</li>
+                            <li>Activity</li>
+                            <li>Followers</li>
+                            <li>Book Shelf</li>
+                            <li>Profile</li>
+                            <li>Reviews</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id='wrap-content'>
+                <div class="box-content">
+                    <div class="profile-content">
+                        <div id="item-header" role="complementary">
+                            <div id="item-header-avatar">
+                                <a href="http://everydayread.com/members/anh-vu/">
+                                    <img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="150" width="150">
+                                </a>
+                            </div>
+                            <!-- #item-header-avatar -->
+                            <div id="item-header-content">
+                                <h2 class="user-nicename">@anh-vu</h2>
+                                <span class="activity">active right now</span>
+                                <div id="item-meta">
+                                    <div id="latest-update">
+                                    </div>
+                                    <div id="item-buttons">
+                                    </div>
+                                    <!-- #item-buttons -->
+                                </div>
+                                <!-- #item-meta -->
+                            </div>
+                            <!-- #item-header-content -->
+                        </div>
+                        <div id="item-nav">
+                            <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+                                <ul>
+                                    <li id="activity-personal-li" class="current selected"><a id="user-activity" href="http://everydayread.com/members/anh-vu/activity/">Activity</a></li>
+                                    <li id="xprofile-personal-li"><a id="user-xprofile" href="http://everydayread.com/members/anh-vu/profile/">Profile</a></li>
+                                    <li id="notifications-personal-li"><a id="user-notifications" href="http://everydayread.com/members/anh-vu/notifications/">Notifications <span class="no-count">0</span></a></li>
+                                    <li id="book-personal-li"><a id="user-book" href="http://everydayread.com/members/anh-vu/book/">Book</a></li>
+                                    <li id="messages-personal-li"><a id="user-messages" href="http://everydayread.com/members/anh-vu/messages/">Messages <span class="no-count">0</span></a></li>
+                                    <li id="friends-personal-li"><a id="user-friends" href="http://everydayread.com/members/anh-vu/friends/">Friends <span class="count">1</span></a></li>
+                                    <li id="groups-personal-li"><a id="user-groups" href="http://everydayread.com/members/anh-vu/groups/">Groups <span class="count">0</span></a></li>
+                                    <li id="settings-personal-li"><a id="user-settings" href="http://everydayread.com/members/anh-vu/settings/">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
+                            <ul>
+                                <li id="just-me-personal-li" class="current selected"><a id="just-me" href="http://everydayread.com/members/anh-vu/activity/">Personal</a></li>
+                                <li id="activity-mentions-personal-li"><a id="activity-mentions" href="http://everydayread.com/members/anh-vu/activity/mentions/">Mentions</a></li>
+                                <li id="activity-favs-personal-li"><a id="activity-favs" href="http://everydayread.com/members/anh-vu/activity/favorites/">Favorites</a></li>
+                                <li id="activity-friends-personal-li"><a id="activity-friends" href="http://everydayread.com/members/anh-vu/activity/friends/">Friends</a></li>
+                                <li id="activity-groups-personal-li"><a id="activity-groups" href="http://everydayread.com/members/anh-vu/activity/groups/">Groups</a></li>
+                                <li id="activity-filter-select" class="last">
+                                    <label for="activity-filter-by">Show:</label>
+                                    <select id="activity-filter-by">
+                                        <option value="-1">— Everything —</option>
+                                        <option value="activity_update">Updates</option>
+                                        <option value="new_blog_post">Posts</option>
+                                        <option value="new_blog_comment">Comments</option>
+                                        <option value="friendship_accepted,friendship_created">Friendships</option>
+                                        <option value="group_details_updated">Group Updates</option>
+                                        <option value="joined_group">Group Memberships</option>
+                                        <option value="created_group">New Groups</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id='content' class="profile-activity">
+                    <div class="box-content">
+                        <form action="http://everydayread.com/activity/post/" method="post" id="whats-new-form" name="whats-new-form" role="complementary">
+                            <div id="whats-new-avatar">
+                                <a href="http://everydayread.com/members/anh-vu/">
+                                    <img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="50" width="50"> </a>
+                            </div>
+                            <p class="activity-greeting">What's new, Anh?</p>
+                            <div id="whats-new-content">
+                                <div id="whats-new-textarea">
+                                    <textarea class="bp-suggestions" name="whats-new" id="whats-new" cols="50" rows="10" style="height: 50px;"></textarea>
+                                </div>
+                                <div id="whats-new-options" style="height: 50px;">
+                                    <div id="whats-new-submit">
+                                        <input type="submit" name="aw-whats-new-submit" id="aw-whats-new-submit" value="Post Update">
+                                    </div>
+                                </div>
+                                <!-- #whats-new-options -->
+                            </div>
+                            <!-- #whats-new-content -->
+                            <input type="hidden" id="_wpnonce_post_update" name="_wpnonce_post_update" value="a68ee83b87">
+                            <input type="hidden" name="_wp_http_referer" value="/members/anh-vu/">
+                        </form>
+                        <div class="activity">
+                            <ul id="activity-stream" class="activity-list item-list">
+                                <li class="box-content activity-item" id="activity-171">
+                                    <div class="book-activity">
+                                        <div class="activity-info">
+                                            <div class="activity-avatar">
+                                                <a href="http://everydayread.com/members/anh-vu/">
+                                                    <img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="50" width="50"> </a>
+                                            </div>
+                                            <div class="activity-status-info">
+                                                <div class="activity-status">
+                                                    <p><a href="http://everydayread.com/members/anh-vu/" title="Anh Vu">Anh Vu</a> posted a new activity comment</p>
+                                                </div>
+                                                <div class="activity-timestamp stats-style">
+                                                    <a href="http://everydayread.com/activity/p/167/">
+					2 weeks ago				</a>
+                                                </div>
+                                            </div>
+                                            <div class="clr"></div>
+                                        </div>
+                                        <div class="activity-content book-id-167">
+                                            <div class="activity-inner">
+                                                <p>Khong co tien mua sach</p>
+                                            </div>
+                                        </div>
+                                        <div class="activity-action">
+                                            <a href="http://everydayread.com/activity/p/167/" class="button view bp-secondary-action" title="View Conversation">View Conversation</a>
+                                            <a href="http://everydayread.com/activity/favorite/171/?_wpnonce=9930e31f88" class="button fav bp-secondary-action" title="Mark as Favorite">Favorite</a>
+                                            <!-- <button>Share</button>	-->
+                                            <div class="fb-like fb_iframe_widget" data-href="http://everydayread.com/members/anh-vu/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1615036335446505&amp;container_width=0&amp;href=http%3A%2F%2Feverydayread.com%2Fmembers%2Fanh-vu%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 120px; height: 20px;"><iframe name="f3a98d2ea8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1615036335446505&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df3543daf4%26domain%3Deverydayread.com%26origin%3Dhttp%253A%252F%252Feverydayread.com%252Ff9ebe4978%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Feverydayread.com%2Fmembers%2Fanh-vu%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 120px; height: 20px;" class=""></iframe></span></div>
+                                            <a href="http://everydayread.com/activity/delete/171/?_wpnonce=c4b4f26444" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a> </div>
+                                    </div>
+                                </li>
+                                <li class="box-content activity-item" id="activity-164">
+                                    <div class="book-activity">
+                                        <div class="activity-info">
+                                            <div class="activity-avatar">
+                                                <a href="http://everydayread.com/members/anh-vu/">
+                                                    <img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="50" width="50"> </a>
+                                            </div>
+                                            <div class="activity-status-info">
+                                                <div class="activity-status">
+                                                    <p><a href="http://everydayread.com/members/anh-vu/" title="Anh Vu">Anh Vu</a> posted a new activity comment</p>
+                                                </div>
+                                                <div class="activity-timestamp stats-style">
+                                                    <a href="http://everydayread.com/activity/p/158/">
+					2 weeks, 4 days ago				</a>
+                                                </div>
+                                            </div>
+                                            <div class="clr"></div>
+                                        </div>
+                                        <div class="activity-content book-id-158">
+                                            <div class="activity-inner">
+                                                <p>Sách chưa đọc</p>
+                                            </div>
+                                        </div>
+                                        <div class="activity-action">
+                                            <a href="http://everydayread.com/activity/p/158/" class="button view bp-secondary-action" title="View Conversation">View Conversation</a>
+                                            <a href="http://everydayread.com/activity/favorite/164/?_wpnonce=9930e31f88" class="button fav bp-secondary-action" title="Mark as Favorite">Favorite</a>
+                                            <!-- <button>Share</button>	-->
+                                            <div class="fb-like fb_iframe_widget" data-href="http://everydayread.com/members/anh-vu/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1615036335446505&amp;container_width=0&amp;href=http%3A%2F%2Feverydayread.com%2Fmembers%2Fanh-vu%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 120px; height: 20px;"><iframe name="f114fa02c4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1615036335446505&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Dfc9f962c%26domain%3Deverydayread.com%26origin%3Dhttp%253A%252F%252Feverydayread.com%252Ff9ebe4978%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Feverydayread.com%2Fmembers%2Fanh-vu%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 120px; height: 20px;" class=""></iframe></span></div>
+                                            <a href="http://everydayread.com/activity/delete/164/?_wpnonce=c4b4f26444" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a> </div>
+                                    </div>
+                                </li>
+                                <li class="box-content activity-item" id="activity-163">
+                                    <div class="book-activity">
+                                        <div class="activity-info">
+                                            <div class="activity-avatar">
+                                                <a href="http://everydayread.com/members/eradmin/">
+                                                    <img src="http://everydayread.com/wp-content/uploads/avatars/1/66a3875a1606ba497a735aeb869f0a32-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Admin"> </a>
+                                            </div>
+                                            <div class="activity-status-info">
+                                                <div class="activity-status">
+                                                    <p><a href="http://everydayread.com/members/eradmin/" title="Admin">Admin</a> and
+                                                        <a href="http://everydayread.com/members/anh-vu/" class=""><img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="20" width="20"></a><a href="http://everydayread.com/members/anh-vu/" title="Anh Vu">Anh Vu</a> are now friends</p>
+                                                </div>
+                                                <div class="activity-timestamp stats-style">
+                                                    <a href="http://everydayread.com/activity/p/163/">
+					2 weeks, 4 days ago				</a>
+                                                </div>
+                                            </div>
+                                            <div class="clr"></div>
+                                        </div>
+                                        <div class="activity-action">
+                                            <a href="?ac=163/#ac-form-163" class="button acomment-reply bp-primary-action" id="acomment-comment-163">Comment<span style="padding-left:6px" ;=""></span></a>
+                                            <a href="http://everydayread.com/activity/favorite/163/?_wpnonce=9930e31f88" class="button fav bp-secondary-action" title="Mark as Favorite">Favorite</a>
+                                            <!-- <button>Share</button>	-->
+                                            <div class="fb-like fb_iframe_widget" data-href="http://everydayread.com/members/anh-vu/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1615036335446505&amp;container_width=0&amp;href=http%3A%2F%2Feverydayread.com%2Fmembers%2Fanh-vu%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 120px; height: 20px;"><iframe name="f273a22cd4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1615036335446505&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df2d60b6854%26domain%3Deverydayread.com%26origin%3Dhttp%253A%252F%252Feverydayread.com%252Ff9ebe4978%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Feverydayread.com%2Fmembers%2Fanh-vu%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 120px; height: 20px;" class=""></iframe></span></div>
+                                        </div>
+                                        <div class="comment-section">
+                                            <div class="activity-comments">
+                                                <form action="http://everydayread.com/activity/reply/" method="post" id="ac-form-163" class="ac-form" style="display: none;">
+                                                    <div class="ac-reply-avatar"><img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="50" width="50"></div>
+                                                    <div class="ac-reply-content">
+                                                        <div class="ac-textarea">
+                                                            <textarea id="ac-input-163" class="ac-input bp-suggestions" name="ac_input_163"></textarea>
+                                                        </div>
+                                                        <input type="submit" name="ac_form_submit" value="Post"> &nbsp; <a href="#" class="ac-reply-cancel">Cancel</a>
+                                                        <input type="hidden" name="comment_form_id" value="163">
+                                                    </div>
+                                                    <input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="794bec697f">
+                                                    <input type="hidden" name="_wp_http_referer" value="/members/anh-vu/">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form action="" name="activity-loop-form" id="activity-loop-form" method="post">
+                                <input type="hidden" id="_wpnonce_activity_filter" name="_wpnonce_activity_filter" value="9b180a426f">
+                                <input type="hidden" name="_wp_http_referer" value="/members/anh-vu/">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id='sidebar'>
+                    <div class="sidebar-box">
+                        <div class='action-button-box'>
+                            <button class='main-button'>Add Book</button>
+                            <button class='main-button'>Share Book</button>
+                            <button class='main-button'>Review Book</button>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class='sidebar-widget'>
+                            <img class='widget-thumb' src="images/book-cover1.jpg" />
+                            <h3 class='widget-title'>Dự Án chia sẻ sách</h3>
+                            <p class='widget-des'> Vào ngày 31/11/2015 Mask Codex sẽ có chương trình chia sẻ sách lập cmn trình!
+                            </p>
+                            <p class='read-more link-underline'>Xem thêm</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class='sidebar-widget'>
+                            <img class='widget-thumb' src="images/book-cover1.jpg" />
+                            <h3 class='widget-title'> Alpha Books tài trợ 1000 cuốn sách.</h3>
+                            <p class='widget-des'> Dự định tặng 1000 cuốn sách vào thư viên ER trong tuần này đó các bạn!
+                            </p>
+                            <p class='read-more link-underline'>Xem thêm</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class='sidebar-widget'>
+                            <img class='widget-thumb' src="images/book-cover1.jpg" />
+                            <h3 class='widget-title'> Alpha Books tài trợ 1000 cuốn sách.</h3>
+                            <p class='widget-des'> Dự định tặng 1000 cuốn sách vào thư viên ER trong tuần này đó các bạn!
+                            </p>
+                            <p class='read-more link-underline'>Xem thêm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='clr'></div>
+            </div>
+            <footer id='footer'>
+                <div id='wrap-footer'>
+                    <div class='footer-widget'>
+                        <img class='footer-logo' src="images/erlogo.png" />
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Everyday Read Team</h3>
+                        <p class='widget-des'>
+                            Địa chỉ: D402, Chung cư Khu KCN Tân Bình
+                            <br/> Điện thoại: 01633449037
+                            <br/> Email: info@everyread.com
+                            <br/>
+                        </p>
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Liên hệ với Everyday Read </h3>
+                        <p class='widget-des'>
+                            <ul class='social-icon-list'>
+                                <li><img src="images/facebook-icon.png"></li>
+                                <li><img src="images/gplus-icon.png"></li>
+                                <li><img src="images/printerest-icon.png"></li>
+                                <li><img src="images/youtube-icon.png"></li>
+                                <li><img src="images/twitter-icon.png"></li>
+                                <li><img src="images/email-icon.png"></li>
+                            </ul>
+                        </p>
+                        <h3 class='widget-title'>Tài trợ cho Everyday Read</h3>
+                        <p class='widget-des center-content'>
+                            <button class='light-button'>Tài trợ cho chúng tôi</button>
+                        </p>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
