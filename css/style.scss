@@ -1131,6 +1131,20 @@ button:hover {
 	background-color: $default-comment-bg;
 }
 
+.profile-content #item-header #item-buttons {
+	padding: $default-padding;
+}
+
+.profile-content #item-header #item-buttons .generic-button {
+	display: inline-block;
+	@extend .button;
+	font-size: 0.8em;
+	height: auto;
+	line-height: 0.8em;
+	padding: $default-padding;
+	cursor: pointer;
+}
+
 .profile-content #item-header-avatar {
 	width: $profile-avatar-size;
 	height: $profile-avatar-size;
@@ -1214,6 +1228,7 @@ ul#members-list {
 		width: 25%;
 		margin-left: -4px;
 		text-align: center;
+		vertical-align: top;
 	}
 }
 
@@ -1241,6 +1256,7 @@ ul#members-list {
 
 #members-list .action {
 	padding: $default-padding;
+	min-height: 34px;
 }
 
 #members-list .action .generic-button {

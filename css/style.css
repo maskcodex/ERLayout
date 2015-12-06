@@ -23,7 +23,7 @@ p {
   margin: 0;
   padding: 0; }
 
-button, .button, #right-head .head-element a.header-link, .comment-section #respond input[type="submit"], select, input {
+button, .button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, .comment-section #respond input[type="submit"], select, input {
   height: 30px;
   line-height: 30px;
   color: #999999;
@@ -33,7 +33,7 @@ button, .button, #right-head .head-element a.header-link, .comment-section #resp
   cursor: pointer;
   min-width: 75px; }
 
-button:hover, .button:hover, #right-head .head-element a.header-link:hover, .comment-section #respond input[type="submit"]:hover {
+button:hover, .button:hover, #right-head .head-element a.header-link:hover, .profile-content #item-header #item-buttons .generic-button:hover, .comment-section #respond input[type="submit"]:hover {
   color: white;
   background-color: #4c77a4; }
 
@@ -43,7 +43,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .com
   text-align: center;
   color: #666666; }
 
-.button, #right-head .head-element a.header-link {
+.button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button {
   padding: 6px; }
 
 .light-button, #right-head .head-element a.header-link, .profile-content #item-nav ul li:hover, .profile-content #item-nav ul li.actived {
@@ -289,7 +289,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .com
 .action-button-box {
   text-align: center; }
 
-.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
+.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .profile-content #item-header #item-buttons .main-button.generic-button, .profile-content #item-header #item-buttons .action-button-box .main-button.generic-button, .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
   display: inline-block;
   margin-bottom: 8px;
   margin-top: 8px;
@@ -590,7 +590,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .com
 
 .book-content-user-status {
   text-align: center; }
-  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
+  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .profile-content #item-header #item-buttons .generic-button, .profile-content #item-header #item-buttons .book-content-user-status .generic-button, .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
     margin: 24px 8px; }
 
 .book-content-info-nav ul {
@@ -788,6 +788,17 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .com
 .profile-content #item-header {
   background-color: #eef0f1; }
 
+.profile-content #item-header #item-buttons {
+  padding: 8px; }
+
+.profile-content #item-header #item-buttons .generic-button {
+  display: inline-block;
+  font-size: 0.8em;
+  height: auto;
+  line-height: 0.8em;
+  padding: 8px;
+  cursor: pointer; }
+
 .profile-content #item-header-avatar {
   width: 150px;
   height: 150px;
@@ -841,7 +852,8 @@ ul#members-list li {
   display: inline-block;
   width: 25%;
   margin-left: -4px;
-  text-align: center; }
+  text-align: center;
+  vertical-align: top; }
 
 #members-list .item-avatar {
   width: 80px;
@@ -860,7 +872,8 @@ ul#members-list li {
   padding: 8px; }
 
 #members-list .action {
-  padding: 8px; }
+  padding: 8px;
+  min-height: 34px; }
 
 #members-list .action .generic-button {
   border: solid 1px #cccccc;
@@ -921,7 +934,9 @@ ul#members-list li {
 .sidr .edit-close,
 .sidr .acf-form-submit .button,
 .sidr .acf-form-submit #right-head .head-element a.header-link,
-#right-head .head-element .sidr .acf-form-submit a.header-link {
+#right-head .head-element .sidr .acf-form-submit a.header-link,
+.sidr .acf-form-submit .profile-content #item-header #item-buttons .generic-button,
+.profile-content #item-header #item-buttons .sidr .acf-form-submit .generic-button {
   display: block;
   margin-bottom: 10px; }
 
