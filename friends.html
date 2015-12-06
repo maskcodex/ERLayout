@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+    <title>Everyday Read</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <style type="text/css">
+    /* Prevent copy paste for all elements except text fields */
+    
+    * {
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+    
+    input,
+    textarea {
+        -webkit-user-select: text;
+    }
+    
+    body {
+        background-color: white;
+        color: black
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id='wrap-all'>
+        <div id='container'>
+            <header id='header'>
+                <div id='top-head'>
+                    <div id='left-head'>
+                        <div class='head-element'>
+                            <h2><a href="#">EverydayRead</a></h2></div>
+                        <div class='head-element'>
+                            <input type='search' id='main-search'>
+                        </div>
+                    </div>
+                    <div id='right-head'>
+                        <ul>
+                            <li class='head-element'>
+                                <div id="main-avatar"><img src="images/post-avatar.jpg" /></div>
+                            </li>
+                            <li class='head-element'><img src="images/menu.png" />
+                                <ul class='sub-menu'>
+                                    <li>sub menu 1</li>
+                                    <li>sub menu 2</li>
+                                    <li>sub menu 3</li>
+                                    <li>sub menu 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'><img src='images/notify.png' />
+                                <ul class='sub-menu'>
+                                    <li>notification 1</li>
+                                    <li>notification 2</li>
+                                    <li>notification 3</li>
+                                    <li>notification 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'>
+                                <a href="#" class='header-link'>Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+                <div id='menu'>
+                    <nav id='main-menu'>
+                        <ul>
+                            <li>Home</li>
+                            <li>Activity</li>
+                            <li>Followers</li>
+                            <li>Book Shelf</li>
+                            <li>Profile</li>
+                            <li>Reviews</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id='wrap-content'>
+                <div class="box-content">
+                    <div class="profile-content">
+                        <div id="item-header" role="complementary">
+                            <div id="item-header-avatar">
+                                <a href="http://everydayread.com/members/anh-vu/">
+                                    <img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="150" width="150">
+                                </a>
+                            </div>
+                            <!-- #item-header-avatar -->
+                            <div id="item-header-content">
+                                <h2 class="user-nicename">@anh-vu</h2>
+                                <span class="activity">active right now</span>
+                                <div id="item-meta">
+                                    <div id="latest-update">
+                                    </div>
+                                    <div id="item-buttons">
+                                    </div>
+                                    <!-- #item-buttons -->
+                                </div>
+                                <!-- #item-meta -->
+                            </div>
+                            <!-- #item-header-content -->
+                        </div>
+                        <div id="item-nav">
+                            <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+                                <ul>
+                                    <li id="activity-personal-li" class="current selected"><a id="user-activity" href="http://everydayread.com/members/anh-vu/activity/">Activity</a></li>
+                                    <li id="xprofile-personal-li"><a id="user-xprofile" href="http://everydayread.com/members/anh-vu/profile/">Profile</a></li>
+                                    <li id="notifications-personal-li"><a id="user-notifications" href="http://everydayread.com/members/anh-vu/notifications/">Notifications <span class="no-count">0</span></a></li>
+                                    <li id="book-personal-li"><a id="user-book" href="http://everydayread.com/members/anh-vu/book/">Book</a></li>
+                                    <li id="messages-personal-li"><a id="user-messages" href="http://everydayread.com/members/anh-vu/messages/">Messages <span class="no-count">0</span></a></li>
+                                    <li id="friends-personal-li" class="actived"><a id="user-friends" href="http://everydayread.com/members/anh-vu/friends/">Friends <span class="count">1</span></a></li>
+                                    <li id="groups-personal-li"><a id="user-groups" href="http://everydayread.com/members/anh-vu/groups/">Groups <span class="count">0</span></a></li>
+                                    <li id="settings-personal-li"><a id="user-settings" href="http://everydayread.com/members/anh-vu/settings/">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="item-body">
+                            <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
+                                <ul>
+                                    <li id="friends-my-friends-personal-li" class="current"><a id="friends-my-friends" href="http://everydayread.com/members/anh-vu/friends/">Friendships</a></li>
+                                    <li id="requests-personal-li"><a id="requests" href="http://everydayread.com/members/anh-vu/friends/requests/">Requests</a></li>
+                                    <li id="members-order-select" class="last filter">
+                                        <label for="members-friends">Order By:</label>
+                                        <select id="members-friends">
+                                            <option value="active">Last Active</option>
+                                            <option value="newest">Newest Registered</option>
+                                            <option value="alphabetical">Alphabetical</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="members friends">
+                                <div id="pag-top" class="pagination">
+                                    <div class="pag-count" id="member-dir-count-top">
+                                        Viewing 1 active member
+                                    </div>
+                                    <div class="pagination-links" id="member-dir-pag-top">
+                                    </div>
+                                </div>
+                                <ul id="members-list" class="item-list">
+                                    <li class="bp-single-member">
+                                        <div class="item-avatar">
+                                            <a href="http://everydayread.com/members/eradmin/"><img src="http://everydayread.com/wp-content/uploads/avatars/1/66a3875a1606ba497a735aeb869f0a32-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Admin"></a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-title">
+                                                <a href="http://everydayread.com/members/eradmin/">Admin</a>
+                                            </div>
+                                            <div class="item-meta"><span class="activity">active 1 day, 3 hours ago</span></div>
+                                        </div>
+                                        <div class="action">
+                                            <div class="generic-button friendship-button is_friend" id="friendship-button-1"><a href="http://everydayread.com/members/anh-vu/friends/remove-friend/1/?_wpnonce=1596a50d12" title="Cancel Friendship" id="friend-1" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li class="bp-single-member">
+                                        <div class="item-avatar">
+                                            <a href="http://everydayread.com/members/eradmin/"><img src="http://everydayread.com/wp-content/uploads/avatars/1/66a3875a1606ba497a735aeb869f0a32-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Admin"></a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-title">
+                                                <a href="http://everydayread.com/members/eradmin/">Admin</a>
+                                            </div>
+                                            <div class="item-meta"><span class="activity">active 1 day, 3 hours ago</span></div>
+                                        </div>
+                                        <div class="action">
+                                            <div class="generic-button friendship-button is_friend" id="friendship-button-1"><a href="http://everydayread.com/members/anh-vu/friends/remove-friend/1/?_wpnonce=1596a50d12" title="Cancel Friendship" id="friend-1" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li class="bp-single-member">
+                                        <div class="item-avatar">
+                                            <a href="http://everydayread.com/members/eradmin/"><img src="http://everydayread.com/wp-content/uploads/avatars/1/66a3875a1606ba497a735aeb869f0a32-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Admin"></a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-title">
+                                                <a href="http://everydayread.com/members/eradmin/">Admin</a>
+                                            </div>
+                                            <div class="item-meta"><span class="activity">active 1 day, 3 hours ago</span></div>
+                                        </div>
+                                        <div class="action">
+                                            <div class="generic-button friendship-button is_friend" id="friendship-button-1"><a href="http://everydayread.com/members/anh-vu/friends/remove-friend/1/?_wpnonce=1596a50d12" title="Cancel Friendship" id="friend-1" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li class="bp-single-member">
+                                        <div class="item-avatar">
+                                            <a href="http://everydayread.com/members/eradmin/"><img src="http://everydayread.com/wp-content/uploads/avatars/1/66a3875a1606ba497a735aeb869f0a32-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Admin"></a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-title">
+                                                <a href="http://everydayread.com/members/eradmin/">Admin</a>
+                                            </div>
+                                            <div class="item-meta"><span class="activity">active 1 day, 3 hours ago</span></div>
+                                        </div>
+                                        <div class="action">
+                                            <div class="generic-button friendship-button is_friend" id="friendship-button-1"><a href="http://everydayread.com/members/anh-vu/friends/remove-friend/1/?_wpnonce=1596a50d12" title="Cancel Friendship" id="friend-1" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                </ul>
+                                <div id="pag-bottom" class="pagination">
+                                    <div class="pag-count" id="member-dir-count-bottom">
+                                        Viewing 1 active member
+                                    </div>
+                                    <div class="pagination-links" id="member-dir-pag-bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .members.friends -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id='footer'>
+                <div id='wrap-footer'>
+                    <div class='footer-widget'>
+                        <img class='footer-logo' src="images/erlogo.png" />
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Everyday Read Team</h3>
+                        <p class='widget-des'>
+                            Địa chỉ: D402, Chung cư Khu KCN Tân Bình
+                            <br/> Điện thoại: 01633449037
+                            <br/> Email: info@everyread.com
+                            <br/>
+                        </p>
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Liên hệ với Everyday Read </h3>
+                        <p class='widget-des'>
+                            <ul class='social-icon-list'>
+                                <li><img src="images/facebook-icon.png"></li>
+                                <li><img src="images/gplus-icon.png"></li>
+                                <li><img src="images/printerest-icon.png"></li>
+                                <li><img src="images/youtube-icon.png"></li>
+                                <li><img src="images/twitter-icon.png"></li>
+                                <li><img src="images/email-icon.png"></li>
+                            </ul>
+                        </p>
+                        <h3 class='widget-title'>Tài trợ cho Everyday Read</h3>
+                        <p class='widget-des center-content'>
+                            <button class='light-button'>Tài trợ cho chúng tôi</button>
+                        </p>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1158,25 +1158,30 @@ button:hover {
 		font-size: 1.5em;
 		color: $dark-color;
 	}
-
-
 }
 
 .profile-content #item-nav {
-	padding: $default-padding*2;
+	padding: $default-padding;
 	background-color: $main-color;
+
 	ul li {
 		display: inline-block;
-		@extend .button;
-		height: $defautl-button-height*2/3;
-		line-height: $defautl-button-height*2/3;
-		color: $h-color;
+		padding: $default-padding;
+		color: $p-color;
+		margin-left: -4px; 
 	}
 
 	ul li:hover {
 		@extend .light-button;
 	}
 
+	ul li:not(:last-child) {
+		border-right: solid 1px $default-border-color;
+	}
+
+	ul li.actived {
+		@extend .light-button;
+	}
 }
 
 .profile-content #subnav {
@@ -1186,7 +1191,7 @@ button:hover {
 	ul li {
 		display: inline-block;
 		padding: $default-padding;
-		color: $h-color;
+		color: $p-color;
 	}
 
 	ul li:not(:last-child) {
@@ -1194,6 +1199,74 @@ button:hover {
 	}
 }
 
+/********************* Friend Page *************************/
+
+#pag-top, #pag-bottom {
+	text-align: center;
+	padding: $default-padding*2;
+	min-height: $defautl-button-height*2;
+	line-height: $defautl-button-height*2;
+}
+
+ul#members-list {
+	li {
+		display: inline-block;
+		width: 25%;
+		margin-left: -4px;
+		text-align: center;
+	}
+}
+
+#members-list .item-avatar {
+	width: $default-avatar-width;
+	height: $default-avatar-width;
+	margin: 0 auto;
+
+	img {
+		width: $default-avatar-width;
+		height: $default-avatar-width;
+		border-radius: $default-avatar-width/2;
+	}
+
+	img:hover {
+		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	}
+}
+
+#members-list .item {
+	padding: $default-padding;
+}
+
+#members-list .action {
+	padding: $default-padding;
+}
+
+#members-list .action .generic-button {
+	border: solid 1px $default-border-color;
+	width: 60%;
+	margin: 0 auto;
+	font-size: 0.8em;
+	padding: $default-padding/2;
+	background-color: $main-color;
+	border-radius: $default-radius;
+	cursor: pointer;
+	color: $h-color;
+}
+
+#members-list .action .generic-button:hover {
+	background-color: $h-color;
+	color: $dark-color;
+}
+
+#members-list .item .item-title {
+	@extend .user-name;
+}
+
+#members-list .item .item-meta {
+	@extend .stats-style;
+}
 
 .sidr {
     display: none;
@@ -1264,3 +1337,4 @@ button:hover {
 #edit-toggle {
     float: right;
 }
+
