@@ -551,6 +551,12 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 .share-activity-section {
   border: solid 2px #0033ff; }
 
+.quote-activity-section {
+  margin-bottom: 8px; }
+
+.share-activity-section {
+  margin-bottom: 8px; }
+
 /* BOOK CONTENT */
 .book-content {
   padding: 8px; }
