@@ -76,6 +76,10 @@ button, select, input {
 	min-width: $default-button-width;
 }
 
+input[type="text"] {
+	cursor: auto;
+}
+
 button:hover {
 	color: $h-color;
 	background-color: $main-color;
@@ -1354,3 +1358,33 @@ ul#members-list {
     float: right;
 }
 
+/************************ MEMBERS **************************/
+.members-list {
+	padding: $default-padding;
+}
+
+#search-members-form {
+	text-align: right;
+	margin-top: $default-margin;
+	
+	input[type="submit"] {
+		@extend .button;
+		height: auto;
+		padding: 0;
+	}
+
+	input[type="text"] {
+		padding-left: $default-padding;
+	}
+}
+
+.item-list-tabs {
+	margin-top: $default-margin;
+	padding: $default-padding;
+	@extend .border-bottom;
+
+	ul li {
+		display: inline-block;
+		padding: $default-padding;
+	}
+}

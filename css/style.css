@@ -23,7 +23,7 @@ p {
   margin: 0;
   padding: 0; }
 
-button, .button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, .comment-section #respond input[type="submit"], select, input {
+button, .button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, #search-members-form input[type="submit"], .comment-section #respond input[type="submit"], select, input {
   height: 30px;
   line-height: 30px;
   color: #999999;
@@ -33,7 +33,10 @@ button, .button, #right-head .head-element a.header-link, .profile-content #item
   cursor: pointer;
   min-width: 75px; }
 
-button:hover, .button:hover, #right-head .head-element a.header-link:hover, .profile-content #item-header #item-buttons .generic-button:hover, .comment-section #respond input[type="submit"]:hover {
+input[type="text"] {
+  cursor: auto; }
+
+button:hover, .button:hover, #right-head .head-element a.header-link:hover, .profile-content #item-header #item-buttons .generic-button:hover, #search-members-form input[type="submit"]:hover, .comment-section #respond input[type="submit"]:hover {
   color: white;
   background-color: #4c77a4; }
 
@@ -43,7 +46,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
   text-align: center;
   color: #666666; }
 
-.button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button {
+.button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, #search-members-form input[type="submit"] {
   padding: 6px; }
 
 .light-button, #right-head .head-element a.header-link, .profile-content #item-nav ul li:hover, .profile-content #item-nav ul li.actived {
@@ -108,7 +111,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 .number {
   color: #4c77a4; }
 
-.border-bottom, .comment-section .comment-meta, .profile-content #item-header-content {
+.border-bottom, .comment-section .comment-meta, .profile-content #item-header-content, .item-list-tabs {
   border-bottom: 1px solid #cccccc; }
 
 .border-top, .comment-section #respond {
@@ -289,7 +292,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 .action-button-box {
   text-align: center; }
 
-.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .profile-content #item-header #item-buttons .main-button.generic-button, .profile-content #item-header #item-buttons .action-button-box .main-button.generic-button, .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
+.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .profile-content #item-header #item-buttons .main-button.generic-button, .profile-content #item-header #item-buttons .action-button-box .main-button.generic-button, .action-button-box #search-members-form input.main-button[type="submit"], #search-members-form .action-button-box input.main-button[type="submit"], .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
   display: inline-block;
   margin-bottom: 8px;
   margin-top: 8px;
@@ -590,7 +593,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 
 .book-content-user-status {
   text-align: center; }
-  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .profile-content #item-header #item-buttons .generic-button, .profile-content #item-header #item-buttons .book-content-user-status .generic-button, .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
+  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .profile-content #item-header #item-buttons .generic-button, .profile-content #item-header #item-buttons .book-content-user-status .generic-button, .book-content-user-status #search-members-form input[type="submit"], #search-members-form .book-content-user-status input[type="submit"], .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
     margin: 24px 8px; }
 
 .book-content-info-nav ul {
@@ -936,7 +939,9 @@ ul#members-list li {
 .sidr .acf-form-submit #right-head .head-element a.header-link,
 #right-head .head-element .sidr .acf-form-submit a.header-link,
 .sidr .acf-form-submit .profile-content #item-header #item-buttons .generic-button,
-.profile-content #item-header #item-buttons .sidr .acf-form-submit .generic-button {
+.profile-content #item-header #item-buttons .sidr .acf-form-submit .generic-button,
+.sidr .acf-form-submit #search-members-form input[type="submit"],
+#search-members-form .sidr .acf-form-submit input[type="submit"] {
   display: block;
   margin-bottom: 10px; }
 
@@ -953,3 +958,23 @@ ul#members-list li {
 
 #edit-toggle {
   float: right; }
+
+/************************ MEMBERS **************************/
+.members-list {
+  padding: 8px; }
+
+#search-members-form {
+  text-align: right;
+  margin-top: 8px; }
+  #search-members-form input[type="submit"] {
+    height: auto;
+    padding: 0; }
+  #search-members-form input[type="text"] {
+    padding-left: 8px; }
+
+.item-list-tabs {
+  margin-top: 8px;
+  padding: 8px; }
+  .item-list-tabs ul li {
+    display: inline-block;
+    padding: 8px; }
