@@ -23,7 +23,7 @@ p {
   margin: 0;
   padding: 0; }
 
-button, .button, #right-head .head-element a.header-link, .profile-content #item-nav ul li, .comment-section #respond input[type="submit"], select, input {
+button, .button, #right-head .head-element a.header-link, .comment-section #respond input[type="submit"], select, input {
   height: 30px;
   line-height: 30px;
   color: #999999;
@@ -33,7 +33,7 @@ button, .button, #right-head .head-element a.header-link, .profile-content #item
   cursor: pointer;
   min-width: 75px; }
 
-button:hover, .button:hover, #right-head .head-element a.header-link:hover, .profile-content #item-nav ul li:hover, .comment-section #respond input[type="submit"]:hover {
+button:hover, .button:hover, #right-head .head-element a.header-link:hover, .comment-section #respond input[type="submit"]:hover {
   color: white;
   background-color: #4c77a4; }
 
@@ -43,10 +43,10 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
   text-align: center;
   color: #666666; }
 
-.button, #right-head .head-element a.header-link, .profile-content #item-nav ul li {
+.button, #right-head .head-element a.header-link {
   padding: 6px; }
 
-.light-button, #right-head .head-element a.header-link, .profile-content #item-nav ul li:hover {
+.light-button, #right-head .head-element a.header-link, .profile-content #item-nav ul li:hover, .profile-content #item-nav ul li.actived {
   color: #4c77a4;
   background-color: white; }
 
@@ -81,11 +81,11 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
   color: inherit;
   box-sizing: content-box; }
 
-.link, .link-underline, .user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child, .activity-type-tabs ul li.selected {
+.link, .link-underline, .user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child, #members-list .item .item-title, .activity-type-tabs ul li.selected {
   color: #0033ff;
   cursor: pointer; }
 
-.link:hover, .link-underline:hover, .user-name:hover, .acomment-meta a:hover, .comment-section .fn:hover, .comment-section #respond form p a:hover:first-child, .activity-type-tabs ul li.selected:hover {
+.link:hover, .link-underline:hover, .user-name:hover, .acomment-meta a:hover, .comment-section .fn:hover, .comment-section #respond form p a:hover:first-child, #members-list .item .item-title:hover, .activity-type-tabs ul li.selected:hover {
   text-decoration: underline; }
 
 .link-underline {
@@ -94,10 +94,10 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 .link-underline:hover {
   padding-left: 4px; }
 
-.user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child {
+.user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child, #members-list .item .item-title {
   font-weight: bold; }
 
-.stats-style, .acomment-meta a span, .comment-section .comment-meta {
+.stats-style, .acomment-meta a span, .comment-section .comment-meta, #members-list .item .item-meta {
   font-size: 0.8em;
   line-height: 2em; }
 
@@ -289,7 +289,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 .action-button-box {
   text-align: center; }
 
-.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .profile-content #item-nav ul li.main-button, .profile-content #item-nav ul .action-button-box li.main-button, .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
+.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
   display: inline-block;
   margin-bottom: 8px;
   margin-top: 8px;
@@ -590,7 +590,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 
 .book-content-user-status {
   text-align: center; }
-  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .profile-content #item-nav ul li, .profile-content #item-nav ul .book-content-user-status li, .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
+  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
     margin: 24px 8px; }
 
 .book-content-info-nav ul {
@@ -810,13 +810,15 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
     color: #666666; }
 
 .profile-content #item-nav {
-  padding: 16px;
+  padding: 8px;
   background-color: #4c77a4; }
   .profile-content #item-nav ul li {
     display: inline-block;
-    height: 20px;
-    line-height: 20px;
-    color: white; }
+    padding: 8px;
+    color: #cccccc;
+    margin-left: -4px; }
+  .profile-content #item-nav ul li:not(:last-child) {
+    border-right: solid 1px #cccccc; }
 
 .profile-content #subnav {
   margin-top: 16px;
@@ -824,6 +826,53 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
   .profile-content #subnav ul li {
     display: inline-block;
     padding: 8px;
-    color: white; }
+    color: #cccccc; }
   .profile-content #subnav ul li:not(:last-child) {
     border-right: solid 1px #cccccc; }
+
+/********************* Friend Page *************************/
+#pag-top, #pag-bottom {
+  text-align: center;
+  padding: 16px;
+  min-height: 60px;
+  line-height: 60px; }
+
+ul#members-list li {
+  display: inline-block;
+  width: 25%;
+  margin-left: -4px;
+  text-align: center; }
+
+#members-list .item-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto; }
+  #members-list .item-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px; }
+  #members-list .item-avatar img:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
+
+#members-list .item {
+  padding: 8px; }
+
+#members-list .action {
+  padding: 8px; }
+
+#members-list .action .generic-button {
+  border: solid 1px #cccccc;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 0.8em;
+  padding: 4px;
+  background-color: #4c77a4;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; }
+
+#members-list .action .generic-button:hover {
+  background-color: white;
+  color: #666666; }
