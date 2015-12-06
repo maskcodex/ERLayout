@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+    <title>Everyday Read</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <style type="text/css">
+    /* Prevent copy paste for all elements except text fields */
+    
+    * {
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+    
+    input,
+    textarea {
+        -webkit-user-select: text;
+    }
+    
+    body {
+        background-color: white;
+        color: black
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id='wrap-all'>
+        <div id='container'>
+            <header id='header'>
+                <div id='top-head'>
+                    <div id='left-head'>
+                        <div class='head-element'>
+                            <h2><a href="#">EverydayRead</a></h2></div>
+                        <div class='head-element'>
+                            <input type='search' id='main-search'>
+                        </div>
+                    </div>
+                    <div id='right-head'>
+                        <ul>
+                            <li class='head-element'>
+                                <div id="main-avatar"><img src="images/post-avatar.jpg" /></div>
+                            </li>
+                            <li class='head-element'><img src="images/menu.png" />
+                                <ul class='sub-menu'>
+                                    <li>sub menu 1</li>
+                                    <li>sub menu 2</li>
+                                    <li>sub menu 3</li>
+                                    <li>sub menu 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'><img src='images/notify.png' />
+                                <ul class='sub-menu'>
+                                    <li>notification 1</li>
+                                    <li>notification 2</li>
+                                    <li>notification 3</li>
+                                    <li>notification 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'>
+                                <a href="#" class='header-link'>Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+                <div id='menu'>
+                    <nav id='main-menu'>
+                        <ul>
+                            <li>Home</li>
+                            <li>Activity</li>
+                            <li>Followers</li>
+                            <li>Book Shelf</li>
+                            <li>Profile</li>
+                            <li>Reviews</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id='wrap-content'>
+                <div id='content'>
+                    <div class="box-content">
+                    	<div class="members-list">
+                        <article id="post-0" class="post-0 page type-page status-publish hentry">
+                            <header class="entry-header">
+                                <h1 class="entry-title" style="display:none">Members</h1>
+                                <!-- display:none -->
+                            </header>
+                            <!-- .entry-header -->
+                            <div class="entry-content">
+                                <div id="buddypress">
+                                    <div id="members-dir-search" class="dir-search" role="search">
+                                        <form action="" method="get" id="search-members-form">
+                                            <label>
+                                                <input type="text" name="s" id="members_search" placeholder="Search Members...">
+                                            </label>
+                                            <input type="submit" id="members_search_submit" name="members_search_submit" value="Search">
+                                        </form>
+                                    </div>
+                                    <!-- #members-dir-search -->
+                                    <form action="" method="post" id="members-directory-form" class="dir-form">
+                                        <div class="item-list-tabs" role="navigation">
+                                            <ul>
+                                                <li class="" id="members-all"><a href="http://everydayread.com/members/">All Members <span>5</span></a></li>
+                                                <li id="members-personal"><a href="http://everydayread.com/members/anh-vu/friends/my-friends/">My Friends <span>2</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- .item-list-tabs -->
+                                        <div class="item-list-tabs" id="subnav" role="navigation">
+                                            <ul>
+                                                <li id="members-order-select" class="last filter">
+                                                    <label for="members-order-by">Order By:</label>
+                                                    <select id="members-order-by">
+                                                        <option value="active">Last Active</option>
+                                                        <option value="newest">Newest Registered</option>
+                                                        <option value="alphabetical">Alphabetical</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="members-dir-list" class="members dir-list">
+                                            <div id="pag-top" class="pagination">
+                                                <div class="pag-count" id="member-dir-count-top">
+                                                    Viewing 1 - 5 of 5 active members
+                                                </div>
+                                                <div class="pagination-links" id="member-dir-pag-top">
+                                                </div>
+                                            </div>
+                                            <ul id="members-list" class="item-list">
+                                                <li class="odd is-online is-current-user">
+                                                    <div class="item-avatar">
+                                                        <a href="http://everydayread.com/members/anh-vu/"><img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="50" width="50"></a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="item-title">
+                                                            <a href="http://everydayread.com/members/anh-vu/">Anh Vu</a>
+                                                        </div>
+                                                        <div class="item-meta"><span class="activity">active right now</span></div>
+                                                    </div>
+                                                    <div class="action">
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </li>
+                                                <li class="even">
+                                                    <div class="item-avatar">
+                                                        <a href="http://everydayread.com/members/la/"><img src="https://graph.facebook.com/1019162108096094/picture?width=150&amp;height=150" alt="Profile picture of La" class="avatar avatar-wordpress-social-login" height="50" width="50"></a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="item-title">
+                                                            <a href="http://everydayread.com/members/la/">La</a>
+                                                            <span class="update"> - "Hello @anh-vu"<span class="activity-read-more"><a href="http://everydayread.com/activity/p/206/" rel="nofollow">View</a></span></span>
+                                                        </div>
+                                                        <div class="item-meta"><span class="activity">active 16 minutes ago</span></div>
+                                                    </div>
+                                                    <div class="action">
+                                                        <div class="generic-button friendship-button is_friend" id="friendship-button-13"><a href="http://everydayread.com/members/anh-vu/friends/remove-friend/13/?_wpnonce=1596a50d12" title="Cancel Friendship" id="friend-13" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </li>
+                                                <li class="odd">
+                                                    <div class="item-avatar">
+                                                        <a href="http://everydayread.com/members/la_phan/"><img src="https://graph.facebook.com/115982515424958/picture?width=150&amp;height=150" alt="Profile picture of La Phan" class="avatar avatar-wordpress-social-login" height="50" width="50"></a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="item-title">
+                                                            <a href="http://everydayread.com/members/la_phan/">La Phan</a>
+                                                        </div>
+                                                        <div class="item-meta"><span class="activity">active 6 hours, 50 minutes ago</span></div>
+                                                    </div>
+                                                    <div class="action">
+                                                        <div class="generic-button friendship-button not_friends" id="friendship-button-15"><a href="http://everydayread.com/members/anh-vu/friends/add-friend/15/?_wpnonce=f96e69dd3a" title="Add Friend" id="friend-15" rel="add" class="friendship-button not_friends add">Add Friend</a></div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </li>
+                                                <li class="even">
+                                                    <div class="item-avatar">
+                                                        <a href="http://everydayread.com/members/eradmin/"><img src="http://everydayread.com/wp-content/uploads/avatars/1/66a3875a1606ba497a735aeb869f0a32-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Admin"></a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="item-title">
+                                                            <a href="http://everydayread.com/members/eradmin/">Admin</a>
+                                                        </div>
+                                                        <div class="item-meta"><span class="activity">active 1 day, 6 hours ago</span></div>
+                                                    </div>
+                                                    <div class="action">
+                                                        <div class="generic-button friendship-button is_friend" id="friendship-button-1"><a href="http://everydayread.com/members/anh-vu/friends/remove-friend/1/?_wpnonce=1596a50d12" title="Cancel Friendship" id="friend-1" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </li>
+                                                <li class="odd">
+                                                    <div class="item-avatar">
+                                                        <a href="http://everydayread.com/members/phanla/"><img src="http://everydayread.com/wp-content/uploads/avatars/10/7f00f759ef596f59dbff8b18b827b927-bpthumb.jpg" class="avatar user-10-avatar avatar-50 photo" width="50" height="50" alt="Profile picture of Phan La"></a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="item-title">
+                                                            <a href="http://everydayread.com/members/phanla/">Phan La</a>
+                                                        </div>
+                                                        <div class="item-meta"><span class="activity">active 2 weeks, 5 days ago</span></div>
+                                                    </div>
+                                                    <div class="action">
+                                                        <div class="generic-button friendship-button not_friends" id="friendship-button-10"><a href="http://everydayread.com/members/anh-vu/friends/add-friend/10/?_wpnonce=f96e69dd3a" title="Add Friend" id="friend-10" rel="add" class="friendship-button not_friends add">Add Friend</a></div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </li>
+                                            </ul>
+                                            <div id="pag-bottom" class="pagination">
+                                                <div class="pag-count" id="member-dir-count-bottom">
+                                                    Viewing 1 - 5 of 5 active members
+                                                </div>
+                                                <div class="pagination-links" id="member-dir-pag-bottom">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #members-dir-list -->
+                                        <input type="hidden" id="_wpnonce-member-filter" name="_wpnonce-member-filter" value="d13567691b">
+                                        <input type="hidden" name="_wp_http_referer" value="/members/">
+                                    </form>
+                                    <!-- #members-directory-form -->
+                                </div>
+                                <!-- #buddypress -->
+                            </div>
+                            <!-- .entry-content -->
+                            <footer class="entry-meta">
+                            </footer>
+                            <!-- .entry-meta -->
+                        </article>
+                    	</div>
+                    </div>
+                </div>
+                <div id='sidebar'>
+                    <div class="sidebar-box">
+                        <div class='action-button-box'>
+                            <button class='main-button'>Add Book</button>
+                            <button class='main-button'>Share Book</button>
+                            <button class='main-button'>Review Book</button>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class='sidebar-widget'>
+                            <img class='widget-thumb' src="images/book-cover1.jpg" />
+                            <h3 class='widget-title'>Dự Án chia sẻ sách</h3>
+                            <p class='widget-des'> Vào ngày 31/11/2015 Mask Codex sẽ có chương trình chia sẻ sách lập cmn trình!
+                            </p>
+                            <p class='read-more link-underline'>Xem thêm</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class='sidebar-widget'>
+                            <img class='widget-thumb' src="images/book-cover1.jpg" />
+                            <h3 class='widget-title'> Alpha Books tài trợ 1000 cuốn sách.</h3>
+                            <p class='widget-des'> Dự định tặng 1000 cuốn sách vào thư viên ER trong tuần này đó các bạn!
+                            </p>
+                            <p class='read-more link-underline'>Xem thêm</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class='sidebar-widget'>
+                            <img class='widget-thumb' src="images/book-cover1.jpg" />
+                            <h3 class='widget-title'> Alpha Books tài trợ 1000 cuốn sách.</h3>
+                            <p class='widget-des'> Dự định tặng 1000 cuốn sách vào thư viên ER trong tuần này đó các bạn!
+                            </p>
+                            <p class='read-more link-underline'>Xem thêm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='clr'></div>
+            </div>
+            <footer id='footer'>
+                <div id='wrap-footer'>
+                    <div class='footer-widget'>
+                        <img class='footer-logo' src="images/erlogo.png" />
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Everyday Read Team</h3>
+                        <p class='widget-des'>
+                            Địa chỉ: D402, Chung cư Khu KCN Tân Bình
+                            <br/> Điện thoại: 01633449037
+                            <br/> Email: info@everyread.com
+                            <br/>
+                        </p>
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Liên hệ với Everyday Read </h3>
+                        <p class='widget-des'>
+                            <ul class='social-icon-list'>
+                                <li><img src="images/facebook-icon.png"></li>
+                                <li><img src="images/gplus-icon.png"></li>
+                                <li><img src="images/printerest-icon.png"></li>
+                                <li><img src="images/youtube-icon.png"></li>
+                                <li><img src="images/twitter-icon.png"></li>
+                                <li><img src="images/email-icon.png"></li>
+                            </ul>
+                        </p>
+                        <h3 class='widget-title'>Tài trợ cho Everyday Read</h3>
+                        <p class='widget-des center-content'>
+                            <button class='light-button'>Tài trợ cho chúng tôi</button>
+                        </p>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
