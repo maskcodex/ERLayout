@@ -1392,6 +1392,9 @@ ul#members-list {
 }
 
 .item-list-tabs {
+	//margin-top: $default-margin;
+	//padding: $default-padding;
+	//@extend .border-bottom;
 
 	ul li {
 		display: inline-block;
@@ -1487,6 +1490,52 @@ table#message-threads {
 	}
 }
 
-.pagination {
 
+/********************** USER - BOOKS *********************/
+
+.user-books {
+	margin-top: $default-margin*2;
+	margin-bottom: $default-margin*2;
+	border: solid 1px $default-border-color;
 }
+
+.user-book-nav {
+	ul {
+		width: 100%;
+		background: $orange-color;
+		color: $h-color;
+		border-bottom: solid 3px $main-color;
+	}
+
+	ul li {
+		float: left;
+		width: 33.33%;
+		padding-top: $default-padding;
+		padding-bottom: $default-padding;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	ul li.activated {
+		background: $main-color;
+	}
+}
+
+.list-books {
+	padding: $default-padding;
+	display: none;
+}
+
+.user-books .actived {
+	display: block;
+}
+
+.book-block {
+	float: left;
+	width: 19%;
+	margin: 3%;
+	img {
+		width: 100%;
+	}
+}
+

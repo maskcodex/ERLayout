@@ -121,7 +121,7 @@ button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-eleme
 .number {
   color: #4c77a4; }
 
-.border-bottom, .comment-section .comment-meta, .profile-content #item-header-content, .item-list-tabs {
+.border-bottom, .comment-section .comment-meta, .profile-content #item-header-content {
   border-bottom: 1px solid #cccccc; }
 
 .border-top, .comment-section #respond {
@@ -983,12 +983,9 @@ ul#members-list li {
   #search-members-form input[type="text"] {
     padding-left: 8px; }
 
-.item-list-tabs {
-  margin-top: 8px;
+.item-list-tabs ul li {
+  display: inline-block;
   padding: 8px; }
-  .item-list-tabs ul li {
-    display: inline-block;
-    padding: 8px; }
 
 /********************** NOTIFACATIONS ********************/
 table.notifications {
@@ -1035,3 +1032,38 @@ table#message-threads {
   .messages-options-nav input[type="submit"] {
     height: auto;
     padding: 0; }
+
+/********************** USER - BOOKS *********************/
+.user-books {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: solid 1px #cccccc; }
+
+.user-book-nav ul {
+  width: 100%;
+  background: #eb7b4b;
+  color: white;
+  border-bottom: solid 3px #4c77a4; }
+.user-book-nav ul li {
+  float: left;
+  width: 33.33%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  text-align: center; }
+.user-book-nav ul li.activated {
+  background: #4c77a4; }
+
+.list-books {
+  padding: 8px;
+  display: none; }
+
+.user-books .actived {
+  display: block; }
+
+.book-block {
+  float: left;
+  width: 19%;
+  margin: 3%; }
+  .book-block img {
+    width: 100%; }
