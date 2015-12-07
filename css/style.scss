@@ -1379,9 +1379,6 @@ ul#members-list {
 }
 
 .item-list-tabs {
-	margin-top: $default-margin;
-	padding: $default-padding;
-	@extend .border-bottom;
 
 	ul li {
 		display: inline-block;
