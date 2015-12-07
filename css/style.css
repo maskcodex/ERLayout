@@ -1035,3 +1035,38 @@ table#message-threads {
   .messages-options-nav input[type="submit"] {
     height: auto;
     padding: 0; }
+
+/********************** USER - BOOKS *********************/
+.user-books {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: solid 1px #cccccc; }
+
+.user-book-nav ul {
+  width: 100%;
+  background: #eb7b4b;
+  color: white;
+  border-bottom: solid 3px #4c77a4; }
+.user-book-nav ul li {
+  float: left;
+  width: 33.33%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  text-align: center; }
+.user-book-nav ul li.activated {
+  background: #4c77a4; }
+
+.list-books {
+  padding: 8px;
+  display: none; }
+
+.user-books .actived {
+  display: block; }
+
+.book-block {
+  float: left;
+  width: 19%;
+  margin: 3%; }
+  .book-block img {
+    width: 100%; }
