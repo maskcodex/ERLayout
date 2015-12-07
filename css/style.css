@@ -121,7 +121,7 @@ button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-eleme
 .number {
   color: #4c77a4; }
 
-.border-bottom, .comment-section .comment-meta, .profile-content #item-header-content, .item-list-tabs {
+.border-bottom, .comment-section .comment-meta, .profile-content #item-header-content {
   border-bottom: 1px solid #cccccc; }
 
 .border-top, .comment-section #respond {
@@ -983,12 +983,9 @@ ul#members-list li {
   #search-members-form input[type="text"] {
     padding-left: 8px; }
 
-.item-list-tabs {
-  margin-top: 8px;
+.item-list-tabs ul li {
+  display: inline-block;
   padding: 8px; }
-  .item-list-tabs ul li {
-    display: inline-block;
-    padding: 8px; }
 
 /********************** NOTIFACATIONS ********************/
 table.notifications {
