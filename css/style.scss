@@ -80,6 +80,19 @@ input[type="text"] {
 	cursor: auto;
 }
 
+input[type="checkbox"] {
+	cursor: auto;
+	height: $defautl-button-height/2;
+	background: transparent;
+	min-width: $defautl-button-height/2;
+}
+
+input[type="submit"] {
+	@extend .button;
+	height: auto;
+	padding: 0;
+}
+
 button:hover {
 	color: $h-color;
 	background-color: $main-color;
@@ -1219,7 +1232,7 @@ button:hover {
 
 /********************* Friend Page *************************/
 
-#pag-top, #pag-bottom {
+#pag-top, #pag-bottom, .pagination {
 	text-align: center;
 	padding: $default-padding*2;
 	min-height: $defautl-button-height*2;
@@ -1366,7 +1379,7 @@ ul#members-list {
 #search-members-form {
 	text-align: right;
 	margin-top: $default-margin;
-	
+
 	input[type="submit"] {
 		@extend .button;
 		height: auto;
@@ -1387,4 +1400,96 @@ ul#members-list {
 		display: inline-block;
 		padding: $default-padding;
 	}
+
+	ul li a {
+		//@extend .link;
+	}
+}
+
+
+/********************** NOTIFACATIONS ********************/
+
+table.notifications {
+	width: 100%;
+	border: 1px solid $default-border-color;
+
+	thead {
+		background: $orange-color;
+		color: $h-color;
+		height: $defautl-button-height;
+	}
+
+	th {
+		height: $defautl-button-height;
+		padding: $default-padding/2;
+	}
+
+	tbody tr {
+		background: $default-comment-bg;
+		height: $defautl-button-height;
+	}
+
+	td {
+		padding: $default-padding/2;
+	}
+
+	td.notification-actions a {
+		@extend .link;
+	}
+}
+
+.notifications-options-nav {
+	margin-top: $default-margin*2;
+
+	input[type="submit"] {
+		@extend .button;
+		height: auto;
+		padding: 0;
+	}
+}
+
+
+/********************** MESSAGES ********************/
+
+table#message-threads {
+	width: 100%;
+	border: 1px solid $default-border-color;
+
+	thead {
+		background: $orange-color;
+		color: $h-color;
+		height: $defautl-button-height;
+	}
+
+	th {
+		height: $defautl-button-height;
+		padding: $default-padding/2;
+	}
+
+	tbody tr {
+		background: $default-comment-bg;
+		height: $defautl-button-height;
+	}
+
+	td {
+		padding: $default-padding/2;
+	}
+
+	td.thread-options a {
+		@extend .link;
+	}
+}
+
+.messages-options-nav {
+	margin-top: $default-margin*2;
+
+	input[type="submit"] {
+		@extend .button;
+		height: auto;
+		padding: 0;
+	}
+}
+
+.pagination {
+
 }

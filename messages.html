@@ -123,78 +123,92 @@
                             </div>
                         </div>
                         <div id="item-body">
-                            <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
-                                <ul>
-                                    <li id="notifications-my-notifications-personal-li" class="current selected"><a id="notifications-my-notifications" href="http://everydayread.com/members/anh-vu/notifications/">Unread</a></li>
-                                    <li id="read-personal-li"><a id="read" href="http://everydayread.com/members/anh-vu/notifications/read/">Read</a></li>
-                                    <li id="members-order-select" class="last filter">
-                                        <form action="" method="get" id="notifications-sort-order">
-                                            <label for="notifications-friends">Order By:</label>
-                                            <select id="notifications-sort-order-list" name="sort_order" onchange="this.form.submit();">
-                                                <option value="DESC" selected="selected">Newest First</option>
-                                                <option value="ASC">Oldest First</option>
-                                            </select>
-                                            <noscript>
-                                                &lt;input id="submit" type="submit" name="form-submit" class="submit" value="Go" /&gt;
-                                            </noscript>
-                                        </form>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="pag-top" class="pagination no-ajax">
-                                <div class="pag-count" id="notifications-count-top">
-                                    Viewing 1 notification </div>
-                                <div class="pagination-links" id="notifications-pag-top">
-                                </div>
-                            </div>
-                            <form action="" method="post" id="notifications-bulk-management">
-                                <table class="notifications">
-                                    <thead>
-                                        <tr>
-                                            <th class="icon"></th>
-                                            <th class="bulk-select-all">
-                                                <label class="bp-screen-reader-text" for="select-all-notifications">Select all</label>
-                                                <input id="select-all-notifications" type="checkbox">
-                                            </th>
-                                            <th class="title">Notification</th>
-                                            <th class="date">Date Received</th>
-                                            <th class="actions">Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="bulk-select-check">
-                                                <input id="7" type="checkbox" name="notifications[]" value="7" class="notification-check">
-                                            </td>
-                                            <td class="notification-description"><a href="http://everydayread.com/members/anh-vu/friends/requests/?new">You have a friendship request from La</a></td>
-                                            <td class="notification-since">3 minutes ago</td>
-                                            <td class="notification-actions">
-                                                <a href="http://everydayread.com/members/anh-vu/notifications/unread/?action=read&amp;notification_id=7&amp;_wpnonce=44e051fdd2" class="mark-read primary">Read</a> |
-                                                <a href="http://everydayread.com/members/anh-vu/notifications/unread/?action=delete&amp;notification_id=7&amp;_wpnonce=c442e76d0d" class="delete secondary confirm">Delete</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="notifications-options-nav">
-                                    <label class="bp-screen-reader-text" for="notification-select">Select Bulk Action</label>
-                                    <select name="notification_bulk_action" id="notification-select">
-                                        <option value="" selected="selected">Bulk Actions</option>
-                                        <option value="read">Mark read</option>
-                                        <option value="delete">Delete</option>
-                                    </select>
-                                    <input type="submit" id="notification-bulk-manage" class="button action" value="Apply" disabled="disabled">
-                                </div>
-                                <!-- .notifications-options-nav -->
-                                <input type="hidden" id="notifications_bulk_nonce" name="notifications_bulk_nonce" value="3b9b3b0fc8">
-                                <input type="hidden" name="_wp_http_referer" value="/members/anh-vu/notifications/">
-                            </form>
-                            <div id="pag-bottom" class="pagination no-ajax">
-                                <div class="pag-count" id="notifications-count-bottom">
-                                    Viewing 1 notification </div>
-                                <div class="pagination-links" id="notifications-pag-bottom">
-                                </div>
-                            </div>
+                            <div class="messages">
+            
+
+    <div class="pagination no-ajax" id="user-pag">
+
+        <div class="pag-count" id="messages-dir-count">
+            Viewing 1 message       </div>
+
+        <div class="pagination-links" id="messages-dir-pag">
+                    </div>
+
+    </div><!-- .pagination -->
+
+    
+    
+    <form action="http://everydayread.com/members/la/messages/inbox/bulk-manage/" method="post" id="messages-bulk-management">
+
+        <table id="message-threads" class="messages-notices">
+
+            <thead>
+                <tr>
+                    <th scope="col" class="thread-checkbox bulk-select-all"><label class="bp-screen-reader-text" for="select-all-messages">Select all</label><input id="select-all-messages" type="checkbox"></th>
+                    <th scope="col" class="thread-from">From</th>
+                    <th scope="col" class="thread-info">Subject</th>
+
+                    
+                                            <th scope="col" class="thread-star"><span class="message-action-star"><span class="icon"></span> <span class="screen-reader-text">Star</span></span></th>
+                    
+                    <th scope="col" class="thread-options">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                
+                    <tr id="m-1" class=" unread">
+                        <td class="bulk-select-check">
+                            <input type="checkbox" name="message_ids[]" class="message-check" value="1">
+                        </td>
+
+                                                    <td class="thread-from">
+                                <img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="25" width="25">                             <span class="from">From:</span> <a href="http://everydayread.com/members/anh-vu/" title="Anh Vu">Anh Vu</a>                             <span class="thread-count">(1)</span> <span class="bp-screen-reader-text">1 unread</span>                               <span class="activity">December 6, 2015 at 6:01 pm</span>
+                            </td>
+                        
+                        <td class="thread-info">
+                            <p><a href="http://everydayread.com/members/la/messages/view/1/" title="View Message">adf</a></p>
+                            <p class="thread-excerpt">zfasdf</p>
+                        </td>
+
+                        
+                                                    <td class="thread-star">
+                                <a title="Star the first message in this thread" class="message-action-star" data-star-status="star" data-star-nonce="ed5ddce00a" data-message-id="1" href="http://everydayread.com/members/la/messages/star/1/ed5ddce00a/"><span class="icon"></span> <span class="bp-screen-reader-text">Star</span></a>                          </td>
+                        
+                        <td class="thread-options">
+                                                            <a class="read" href="http://everydayread.com/members/la/messages/inbox/read/?action=read&amp;message_id=1&amp;_wpnonce=202fea9f7d">Read</a>
+                                                         |
+                            <a class="delete" href="http://everydayread.com/members/la/messages/inbox/delete/1/?_wpnonce=e74c31f698">Delete</a>
+                        </td>
+                    </tr>
+
+                
+            </tbody>
+
+        </table><!-- #message-threads -->
+
+        <div class="messages-options-nav">
+                <label class="bp-screen-reader-text" for="messages-select">Select Bulk Action</label>
+    <select name="messages_bulk_action" id="messages-select">
+        <option value="" selected="selected">Bulk Actions</option>
+        <option value="read">Mark read</option>
+        <option value="unread">Mark unread</option>
+        <option value="delete">Delete</option>
+        
+    <option value="star">Add star</option>
+    <option value="unstar">Remove star</option>
+
+    </select>
+    <input type="submit" id="messages-bulk-manage" class="button action" value="Apply" disabled="disabled">
+            </div><!-- .messages-options-nav -->
+
+        <input type="hidden" id="messages_bulk_nonce" name="messages_bulk_nonce" value="605ccf8d6f"><input type="hidden" name="_wp_http_referer" value="/members/la/messages/"> </form>
+
+    
+    
+
+        </div>
                         </div>
                     </div>
                 </div>
