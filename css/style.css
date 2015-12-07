@@ -23,7 +23,7 @@ p {
   margin: 0;
   padding: 0; }
 
-button, .button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, #search-members-form input[type="submit"], .comment-section #respond input[type="submit"], select, input {
+button, .button, input[type="submit"], #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, #search-members-form input[type="submit"], .notifications-options-nav input[type="submit"], .messages-options-nav input[type="submit"], .comment-section #respond input[type="submit"], select, input {
   height: 30px;
   line-height: 30px;
   color: #999999;
@@ -36,7 +36,17 @@ button, .button, #right-head .head-element a.header-link, .profile-content #item
 input[type="text"] {
   cursor: auto; }
 
-button:hover, .button:hover, #right-head .head-element a.header-link:hover, .profile-content #item-header #item-buttons .generic-button:hover, #search-members-form input[type="submit"]:hover, .comment-section #respond input[type="submit"]:hover {
+input[type="checkbox"] {
+  cursor: auto;
+  height: 15px;
+  background: transparent;
+  min-width: 15px; }
+
+input[type="submit"] {
+  height: auto;
+  padding: 0; }
+
+button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-element a.header-link:hover, .profile-content #item-header #item-buttons .generic-button:hover, #search-members-form input[type="submit"]:hover, .comment-section #respond input[type="submit"]:hover {
   color: white;
   background-color: #4c77a4; }
 
@@ -46,7 +56,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
   text-align: center;
   color: #666666; }
 
-.button, #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, #search-members-form input[type="submit"] {
+.button, input[type="submit"], #right-head .head-element a.header-link, .profile-content #item-header #item-buttons .generic-button, #search-members-form input[type="submit"], .notifications-options-nav input[type="submit"], .messages-options-nav input[type="submit"] {
   padding: 6px; }
 
 .light-button, #right-head .head-element a.header-link, .profile-content #item-nav ul li:hover, .profile-content #item-nav ul li.actived {
@@ -84,11 +94,11 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
   color: inherit;
   box-sizing: content-box; }
 
-.link, .link-underline, .user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child, #members-list .item .item-title, .activity-type-tabs ul li.selected {
+.link, .link-underline, .user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child, #members-list .item .item-title, .activity-type-tabs ul li.selected, table.notifications td.notification-actions a, table#message-threads td.thread-options a {
   color: #0033ff;
   cursor: pointer; }
 
-.link:hover, .link-underline:hover, .user-name:hover, .acomment-meta a:hover, .comment-section .fn:hover, .comment-section #respond form p a:hover:first-child, #members-list .item .item-title:hover, .activity-type-tabs ul li.selected:hover {
+.link:hover, .link-underline:hover, .user-name:hover, .acomment-meta a:hover, .comment-section .fn:hover, .comment-section #respond form p a:hover:first-child, #members-list .item .item-title:hover, .activity-type-tabs ul li.selected:hover, table.notifications td.notification-actions a:hover, table#message-threads td.thread-options a:hover {
   text-decoration: underline; }
 
 .link-underline {
@@ -292,7 +302,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 .action-button-box {
   text-align: center; }
 
-.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .profile-content #item-header #item-buttons .main-button.generic-button, .profile-content #item-header #item-buttons .action-button-box .main-button.generic-button, .action-button-box #search-members-form input.main-button[type="submit"], #search-members-form .action-button-box input.main-button[type="submit"], .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
+.action-button-box button.main-button, .action-button-box .main-button.button, .action-button-box input.main-button[type="submit"], .action-button-box #right-head .head-element a.main-button.header-link, #right-head .head-element .action-button-box a.main-button.header-link, .action-button-box .profile-content #item-header #item-buttons .main-button.generic-button, .profile-content #item-header #item-buttons .action-button-box .main-button.generic-button, .action-button-box #search-members-form input.main-button[type="submit"], #search-members-form .action-button-box input.main-button[type="submit"], .action-button-box .comment-section #respond input.main-button[type="submit"], .comment-section #respond .action-button-box input.main-button[type="submit"] {
   display: inline-block;
   margin-bottom: 8px;
   margin-top: 8px;
@@ -593,7 +603,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
 
 .book-content-user-status {
   text-align: center; }
-  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .profile-content #item-header #item-buttons .generic-button, .profile-content #item-header #item-buttons .book-content-user-status .generic-button, .book-content-user-status #search-members-form input[type="submit"], #search-members-form .book-content-user-status input[type="submit"], .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
+  .book-content-user-status button, .book-content-user-status .button, .book-content-user-status input[type="submit"], .book-content-user-status #right-head .head-element a.header-link, #right-head .head-element .book-content-user-status a.header-link, .book-content-user-status .profile-content #item-header #item-buttons .generic-button, .profile-content #item-header #item-buttons .book-content-user-status .generic-button, .book-content-user-status #search-members-form input[type="submit"], #search-members-form .book-content-user-status input[type="submit"], .book-content-user-status .comment-section #respond input[type="submit"], .comment-section #respond .book-content-user-status input[type="submit"] {
     margin: 24px 8px; }
 
 .book-content-info-nav ul {
@@ -845,7 +855,7 @@ button:hover, .button:hover, #right-head .head-element a.header-link:hover, .pro
     border-right: solid 1px #cccccc; }
 
 /********************* Friend Page *************************/
-#pag-top, #pag-bottom {
+#pag-top, #pag-bottom, .pagination {
   text-align: center;
   padding: 16px;
   min-height: 60px;
@@ -936,6 +946,7 @@ ul#members-list li {
 
 .sidr .edit-close,
 .sidr .acf-form-submit .button,
+.sidr .acf-form-submit input[type="submit"],
 .sidr .acf-form-submit #right-head .head-element a.header-link,
 #right-head .head-element .sidr .acf-form-submit a.header-link,
 .sidr .acf-form-submit .profile-content #item-header #item-buttons .generic-button,
@@ -978,3 +989,49 @@ ul#members-list li {
   .item-list-tabs ul li {
     display: inline-block;
     padding: 8px; }
+
+/********************** NOTIFACATIONS ********************/
+table.notifications {
+  width: 100%;
+  border: 1px solid #cccccc; }
+  table.notifications thead {
+    background: #eb7b4b;
+    color: white;
+    height: 30px; }
+  table.notifications th {
+    height: 30px;
+    padding: 4px; }
+  table.notifications tbody tr {
+    background: #eef0f1;
+    height: 30px; }
+  table.notifications td {
+    padding: 4px; }
+
+.notifications-options-nav {
+  margin-top: 16px; }
+  .notifications-options-nav input[type="submit"] {
+    height: auto;
+    padding: 0; }
+
+/********************** MESSAGES ********************/
+table#message-threads {
+  width: 100%;
+  border: 1px solid #cccccc; }
+  table#message-threads thead {
+    background: #eb7b4b;
+    color: white;
+    height: 30px; }
+  table#message-threads th {
+    height: 30px;
+    padding: 4px; }
+  table#message-threads tbody tr {
+    background: #eef0f1;
+    height: 30px; }
+  table#message-threads td {
+    padding: 4px; }
+
+.messages-options-nav {
+  margin-top: 16px; }
+  .messages-options-nav input[type="submit"] {
+    height: auto;
+    padding: 0; }
