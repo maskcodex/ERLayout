@@ -280,6 +280,7 @@ button:hover {
 	float: left;
 	height: 100%;
 	position: relative;
+	
 	h2 {
 		line-height: $top-head-height;
 		padding-left: $default-padding;
@@ -324,6 +325,7 @@ button:hover {
 	height: $top-head-height*3/2;
 	width: $top-head-height*3/2;
 	margin-top: $top-head-height*(-0.1);
+
 	img {
 		width: 100%;
 		height: 100%;
