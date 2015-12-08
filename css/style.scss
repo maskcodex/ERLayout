@@ -1607,3 +1607,17 @@ table#message-threads {
 	@extend .info;
 }
 
+.search-message-form {
+	padding: $default-padding;
+
+	input[type="text"] {
+		padding-left: $default-padding;
+	}
+
+	input[type="submit"] {
+		padding: 0;
+	}
+}
+
+
+
