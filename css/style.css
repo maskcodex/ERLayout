@@ -236,10 +236,9 @@ button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-eleme
   border: solid 1px #4c77a4;
   display: none; }
   .sub-menu li {
-    height: 30px;
-    line-height: 30px;
     border-bottom: solid 1px #cccccc;
-    padding: 8px; }
+    padding: 8px;
+    font-size: 0.8em; }
   .sub-menu a {
     height: 30px;
     line-height: 30px;

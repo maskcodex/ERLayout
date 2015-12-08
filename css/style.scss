@@ -280,7 +280,7 @@ button:hover {
 	float: left;
 	height: 100%;
 	position: relative;
-	
+
 	h2 {
 		line-height: $top-head-height;
 		padding-left: $default-padding;
@@ -350,11 +350,12 @@ button:hover {
 	border: solid 1px $main-color;
 	display: none;
 
-	li{
-		height: $default-submenu-height;
-		line-height: $default-submenu-height;
+	li {
+		//min-height: $default-submenu-height;
+		//line-height: $default-submenu-height;
 		border-bottom: solid 1px $default-border-color;
 		padding: $default-padding;
+		font-size: 0.8em;
 	}
 	
 	a {
