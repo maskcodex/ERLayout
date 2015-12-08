@@ -1539,3 +1539,32 @@ table#message-threads {
 	}
 }
 
+/************************ SETTING ************************/
+#settings-form {
+	margin: $default-margin*2 auto;
+	padding: $default-padding;
+	width: 50%;
+	background: $default-comment-bg;
+
+	a {
+		@extend .link;
+	}
+
+	label, input {
+		margin-top: $default-margin*2;
+		margin-bottom: $default-margin*2;
+	}
+
+	input:not([type='submit'])  {
+		display: block;
+		width: 99%;
+		cursor: auto;
+		padding-left: 1%;
+		background: $default-box-color;
+	}
+
+	input[type='submit'] {
+		width: 100%;
+	}
+}
+
