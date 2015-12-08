@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+    <title>Everyday Read</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <style type="text/css">
+    /* Prevent copy paste for all elements except text fields */
+    
+    * {
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+    
+    input,
+    textarea {
+        -webkit-user-select: text;
+    }
+    
+    body {
+        background-color: white;
+        color: black
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id='wrap-all'>
+        <div id='container'>
+            <header id='header'>
+                <div id='top-head'>
+                    <div id='left-head'>
+                        <div class='head-element'>
+                            <h2><a href="#">EverydayRead</a></h2></div>
+                        <div class='head-element'>
+                            <input type='search' id='main-search'>
+                        </div>
+                    </div>
+                    <div id='right-head'>
+                        <ul>
+                            <li class='head-element'>
+                                <div id="main-avatar"><img src="images/post-avatar.jpg" /></div>
+                            </li>
+                            <li class='head-element'><img src="images/menu.png" />
+                                <ul class='sub-menu'>
+                                    <li>sub menu 1</li>
+                                    <li>sub menu 2</li>
+                                    <li>sub menu 3</li>
+                                    <li>sub menu 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'><img src='images/notify.png' />
+                                <ul class='sub-menu'>
+                                    <li>notification 1</li>
+                                    <li>notification 2</li>
+                                    <li>notification 3</li>
+                                    <li>notification 4</li>
+                                </ul>
+                            </li>
+                            <li class='head-element'>
+                                <a href="#" class='header-link'>Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+                <div id='menu'>
+                    <nav id='main-menu'>
+                        <ul>
+                            <li>Home</li>
+                            <li>Activity</li>
+                            <li>Followers</li>
+                            <li>Book Shelf</li>
+                            <li>Profile</li>
+                            <li>Reviews</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id='wrap-content'>
+                <div class="box-content">
+                    <div class="profile-content">
+                        <div id="item-header" role="complementary">
+                            <div id="item-header-avatar">
+                                <a href="http://everydayread.com/members/anh-vu/">
+                                    <img src="https://graph.facebook.com/669942936470027/picture?width=150&amp;height=150" alt="Profile picture of Anh Vu" class="avatar avatar-wordpress-social-login" height="150" width="150">
+                                </a>
+                            </div>
+                            <!-- #item-header-avatar -->
+                            <div id="item-header-content">
+                                <h2 class="user-nicename">@anh-vu</h2>
+                                <span class="activity">active right now</span>
+                                <div id="item-meta">
+                                    <div id="latest-update">
+                                    </div>
+                                    <div id="item-buttons">
+                                    </div>
+                                    <!-- #item-buttons -->
+                                </div>
+                                <!-- #item-meta -->
+                            </div>
+                            <!-- #item-header-content -->
+                        </div>
+                        <div id="item-nav">
+                            <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+                                <ul>
+                                    <li id="activity-personal-li"><a id="user-activity" href="http://everydayread.com/members/anh-vu/activity/">Activity</a></li>
+                                    <li id="xprofile-personal-li"><a id="user-xprofile" href="http://everydayread.com/members/anh-vu/profile/">Profile</a></li>
+                                    <li id="notifications-personal-li" class="current selected"><a id="user-notifications" href="http://everydayread.com/members/anh-vu/notifications/">Notifications <span class="count">1</span></a></li>
+                                    <li id="book-personal-li"><a id="user-book" href="http://everydayread.com/members/anh-vu/book/">Book</a></li>
+                                    <li id="messages-personal-li"><a id="user-messages" href="http://everydayread.com/members/anh-vu/messages/">Messages <span class="no-count">0</span></a></li>
+                                    <li id="friends-personal-li"><a id="user-friends" href="http://everydayread.com/members/anh-vu/friends/">Friends <span class="count">1</span></a></li>
+                                    <li id="groups-personal-li"><a id="user-groups" href="http://everydayread.com/members/anh-vu/groups/">Groups <span class="count">0</span></a></li>
+                                    <li id="settings-personal-li"><a id="user-settings" href="http://everydayread.com/members/anh-vu/settings/">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="item-body">
+
+        
+<div class="item-list-tabs no-ajax" id="subnav" role="navigation">
+    <ul>
+        
+            <li id="general-personal-li" class="current selected"><a id="general" href="http://everydayread.com/members/anh-vu/settings/">General</a></li><li id="notifications-personal-li"><a id="notifications" href="http://everydayread.com/members/anh-vu/settings/notifications/">Email</a></li><li id="profile-personal-li"><a id="profile" href="http://everydayread.com/members/anh-vu/settings/profile/">Profile Visibility</a></li><li id="delete-account-personal-li"><a id="delete-account" href="http://everydayread.com/members/anh-vu/settings/delete-account/">Delete Account</a></li>
+            </ul>
+</div>
+
+
+<form action="http://everydayread.com/members/anh-vu/settings/general" method="post" class="standard-form" id="settings-form">
+
+    
+        <label for="pwd">Current Password <span>(required to update email or change current password)</span></label>
+        <input type="password" name="pwd" id="pwd" size="16" value="" class="settings-input small" spellcheck="false" autocomplete="off"> &nbsp;<a href="http://everydayread.com/wp-login.php?action=lostpassword" title="Password Lost and Found">Lost your password?</a>
+
+    
+    <label for="email">Account Email</label>
+    <input type="email" name="email" id="email" value="vuhac_vuhac@yahoo.com" class="settings-input">
+
+    <label for="pass1">Change Password <span>(leave blank for no change)</span></label>
+    <input type="password" name="pass1" id="pass1" size="16" value="" class="settings-input small password-entry" spellcheck="false" autocomplete="off"> &nbsp;New Password<br>
+    <div id="pass-strength-result"></div>
+    <input type="password" name="pass2" id="pass2" size="16" value="" class="settings-input small password-entry-confirm" spellcheck="false" autocomplete="off"> &nbsp;Repeat New Password
+    
+    <div class="submit">
+        <input type="submit" name="submit" value="Save Changes" id="submit" class="auto">
+    </div>
+
+    
+    <input type="hidden" id="_wpnonce" name="_wpnonce" value="46aec831b8"><input type="hidden" name="_wp_http_referer" value="/members/anh-vu/settings/">
+</form>
+
+
+    </div>
+                    </div>
+                </div>
+            </div>
+            <footer id='footer'>
+                <div id='wrap-footer'>
+                    <div class='footer-widget'>
+                        <img class='footer-logo' src="images/erlogo.png" />
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Everyday Read Team</h3>
+                        <p class='widget-des'>
+                            Địa chỉ: D402, Chung cư Khu KCN Tân Bình
+                            <br/> Điện thoại: 01633449037
+                            <br/> Email: info@everyread.com
+                            <br/>
+                        </p>
+                    </div>
+                    <div class='footer-widget'>
+                        <h3 class='widget-title'>Liên hệ với Everyday Read </h3>
+                        <p class='widget-des'>
+                            <ul class='social-icon-list'>
+                                <li><img src="images/facebook-icon.png"></li>
+                                <li><img src="images/gplus-icon.png"></li>
+                                <li><img src="images/printerest-icon.png"></li>
+                                <li><img src="images/youtube-icon.png"></li>
+                                <li><img src="images/twitter-icon.png"></li>
+                                <li><img src="images/email-icon.png"></li>
+                            </ul>
+                        </p>
+                        <h3 class='widget-title'>Tài trợ cho Everyday Read</h3>
+                        <p class='widget-des center-content'>
+                            <button class='light-button'>Tài trợ cho chúng tôi</button>
+                        </p>
+                    </div>
+                    <div class='clr'></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

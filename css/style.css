@@ -94,11 +94,11 @@ button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-eleme
   color: inherit;
   box-sizing: content-box; }
 
-.link, .link-underline, .user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child, #members-list .item .item-title, .activity-type-tabs ul li.selected, table.notifications td.notification-actions a, table#message-threads td.thread-options a {
+.link, .link-underline, .user-name, .acomment-meta a, .comment-section .fn, .comment-section #respond form p a:first-child, #members-list .item .item-title, .activity-type-tabs ul li.selected, table.notifications td.notification-actions a, table#message-threads td.thread-options a, #settings-form a {
   color: #0033ff;
   cursor: pointer; }
 
-.link:hover, .link-underline:hover, .user-name:hover, .acomment-meta a:hover, .comment-section .fn:hover, .comment-section #respond form p a:hover:first-child, #members-list .item .item-title:hover, .activity-type-tabs ul li.selected:hover, table.notifications td.notification-actions a:hover, table#message-threads td.thread-options a:hover {
+.link:hover, .link-underline:hover, .user-name:hover, .acomment-meta a:hover, .comment-section .fn:hover, .comment-section #respond form p a:hover:first-child, #members-list .item .item-title:hover, .activity-type-tabs ul li.selected:hover, table.notifications td.notification-actions a:hover, table#message-threads td.thread-options a:hover, #settings-form a:hover {
   text-decoration: underline; }
 
 .link-underline {
@@ -1066,4 +1066,22 @@ table#message-threads {
   width: 19%;
   margin: 3%; }
   .book-block img {
+    width: 100%; }
+
+/************************ SETTING ************************/
+#settings-form {
+  margin: 16px auto;
+  padding: 8px;
+  width: 50%;
+  background: #eef0f1; }
+  #settings-form label, #settings-form input {
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  #settings-form input:not([type='submit']) {
+    display: block;
+    width: 99%;
+    cursor: auto;
+    padding-left: 1%;
+    background: white; }
+  #settings-form input[type='submit'] {
     width: 100%; }
