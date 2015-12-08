@@ -35,6 +35,15 @@ $quote-color: #ff3300;
 $share-color: #0033ff;
 $profile-avatar-size: 150px;
 
+$info-color: #00529b;
+$info-bg: #bde5f8;
+$success-color: #4f8a10;
+$success-bg: #dff3bf;
+$warning-color: #9f6000;
+$warning-bg: #feefb3;
+$error-color: #d8000c;
+$error-bg: #ffbaba;
+
 body {
     background-color: $body-bakground;
     margin: 0;
@@ -197,6 +206,31 @@ button:hover {
 
 .border-top {
 	border-top: 1px solid $default-border-color;
+}
+
+.info, .success, .warning, .error {
+	margin: $default-margin;
+	padding: $default-padding;
+}
+
+.info {
+    color: $info-color;
+    background-color: $info-bg;
+}
+
+.success {
+    color: $success-color;
+    background-color: $success-bg;
+}
+
+.warning {
+    color: $warning-color;
+    background-color: $warning-bg;
+}
+
+.error {
+    color: $error-color;
+    background-color: $error-bg;
 }
 
 .clr {
@@ -1566,5 +1600,10 @@ table#message-threads {
 	input[type='submit'] {
 		width: 100%;
 	}
+}
+
+/************************ NOTICE FORM *************************/
+.bp-template-notice {
+	@extend .info;
 }
 
