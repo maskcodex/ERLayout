@@ -127,6 +127,26 @@ button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-eleme
 .border-top, .comment-section #respond {
   border-top: 1px solid #cccccc; }
 
+.info, .bp-template-notice, .success, .warning, .error {
+  margin: 8px;
+  padding: 8px; }
+
+.info, .bp-template-notice {
+  color: #00529b;
+  background-color: #bde5f8; }
+
+.success {
+  color: #4f8a10;
+  background-color: #dff3bf; }
+
+.warning {
+  color: #9f6000;
+  background-color: #feefb3; }
+
+.error {
+  color: #d8000c;
+  background-color: #ffbaba; }
+
 .clr {
   clear: both; }
 
@@ -1085,3 +1105,5 @@ table#message-threads {
     background: white; }
   #settings-form input[type='submit'] {
     width: 100%; }
+
+/************************ NOTICE FORM *************************/
