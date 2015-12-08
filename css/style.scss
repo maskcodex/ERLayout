@@ -302,20 +302,35 @@ button:hover {
 	cursor: pointer;
 	position: relative;
 	//min-width: $top-head-height*0.6;
-	height: $top-head-height*0.6;
-	margin-top: $top-head-height*0.2;
+	height: $top-head-height*0.4;
+	margin-top: $top-head-height*0.3;
 	padding-left: $default-padding;
 	padding-right: $default-padding;
 
 	img {
-		width: $top-head-height*0.6;
-		height: $top-head-height*0.6;
+		width: $top-head-height*0.4;
+		height: $top-head-height*0.4;
 	}
 
 	a.header-link {
-		line-height: $top-head-height*0.6;
+		line-height: $top-head-height*0.4;
 		@extend .light-button;
 		@extend .button;
+		font-size: 0.6em;
+	}
+}
+
+#right-head .head-element #main-avatar {
+	height: $top-head-height*3/2;
+	width: $top-head-height*3/2;
+	margin-top: $top-head-height*(-0.1);
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		box-shadow: 0 2px 1px rgba(0, 0, 0, .6);
+		-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .6);
+		-moz-box-shadow: 0 2px 1px rgba(0, 0, 0, .6);
 	}
 }
 
@@ -326,7 +341,7 @@ button:hover {
 .sub-menu {
 	background-color: $default-box-color;
 	position: absolute;
-	top: $top-head-height*0.5;
+	top: $top-head-height*0.4;
 	width: $default-submenu-width;
 	left: ($top-head-height*0.6 - $default-submenu-width)/2;
 	padding:  $default-padding;
@@ -546,8 +561,6 @@ button:hover {
 		height: 100%;
 	}
 }
-
-
 
 .activity-avatar {
 	width: 7%;
