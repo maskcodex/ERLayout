@@ -1107,3 +1107,9 @@ table#message-threads {
     width: 100%; }
 
 /************************ NOTICE FORM *************************/
+.search-message-form {
+  padding: 8px; }
+  .search-message-form input[type="text"] {
+    padding-left: 8px; }
+  .search-message-form input[type="submit"] {
+    padding: 0; }
