@@ -4,7 +4,7 @@ $dark-color: #666666;
 $orange-color: #eb7b4b;
 $green-color: #33cc00;
 $body-bakground: #e9e8e4;
-$container-width: 1000px;
+$container-width: 90%;
 $main-color: #4c77a4;
 $h-color: #ffffff;
 $link-color: #0033ff;
@@ -280,7 +280,7 @@ button:hover {
 	float: left;
 	height: 100%;
 	position: relative;
-	
+
 	h2 {
 		line-height: $top-head-height;
 		padding-left: $default-padding;
@@ -350,11 +350,12 @@ button:hover {
 	border: solid 1px $main-color;
 	display: none;
 
-	li{
-		height: $default-submenu-height;
-		line-height: $default-submenu-height;
+	li {
+		//min-height: $default-submenu-height;
+		//line-height: $default-submenu-height;
 		border-bottom: solid 1px $default-border-color;
 		padding: $default-padding;
+		font-size: 0.8em;
 	}
 	
 	a {
@@ -1570,7 +1571,7 @@ table#message-threads {
 	}
 }
 
-.list-books {
+.user-books .list-books {
 	padding: $default-padding;
 	display: none;
 }
@@ -1635,4 +1636,170 @@ table#message-threads {
 }
 
 
+/************************ REPONSIVE *************************/
 
+@media screen and (max-width: 1024px) {
+  	#main-search {
+  		width: 200px;
+  	}
+
+  	#main-search {
+  		width: 100%;
+  		margin-left: $default-margin;
+  	}
+
+  	ul#members-list {
+		li {
+			display: inline-block;
+			width: 33.33%;
+			margin-left: -4px;
+			text-align: center;
+			vertical-align: top;
+		}
+	}
+
+	.book-block {
+		width: 27.33%;
+		margin: 3%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  	#main-search {
+  		width: 100px;
+  	}
+
+  	#menu {
+  		position: fixed;
+  		top: $top-head-height;
+  		left: 0;
+  		right: 0;
+  		z-index: 100;
+  		margin: 0;
+  		overflow: hidden;
+  	}
+
+  	#wrap-content {
+  		margin-top: $top-head-height*2 + $default-margin;
+  	}
+
+  	#top-head {
+  		position: fixed;
+  		top: 0;
+  		left: 0;
+  		z-index: 200;
+  	}
+
+  	#main-avatar {
+  		display: none;
+  	}
+
+  	#sidebar {
+  		display: none;
+  	}
+
+  	#left-head {
+  		h2 {
+  			display: none;
+  		}
+  	}
+
+  	#main-search {
+  		width: 100%;
+  		margin-left: $default-margin;
+  	}
+
+  	#right-head {
+
+  	}
+
+  	#content {
+  		width: 100%;
+  	}
+
+  	.footer-widget {
+  		width: 100%;
+  		text-align: center;
+  		border-bottom: solid 1px $default-border-color;
+  	}
+
+  	.social-icon-list {
+  		li {
+  			width: 16.6%;
+  		}
+  	}
+
+  	.book-share-quick-info {
+  		h1 {
+  			font-size: 1.2em;
+  			text-align: center;
+  		}
+  	}
+
+  	.book-info-cover {
+  		width: 80%;
+  		margin: 0 auto;
+  		float: none;
+  	}
+
+  	.book-share-quote {
+  		max-width: 100%;
+  	}
+
+  	.timer-coutdown {
+  		width: 100%;
+  	}
+
+  	.share-book-action-info {
+  		width: 100%;
+  	}
+
+  	.profile-content #item-nav ul li:not(:last-child), .profile-content #subnav ul li:not(:last-child) {
+  		border: none;
+  	}
+
+  	ul#members-list {
+		li {
+			display: inline-block;
+			width: 50%;
+			margin-left: -4px;
+			text-align: center;
+			vertical-align: top;
+		}
+	}
+
+	.book-block {
+		width: 44%;
+		margin: 3%;
+	}
+
+	.stats-filter, .search-filter {
+		width: 100%;
+		float: none !important;
+		margin-bottom: $default-margin;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	ul#members-list {
+		li {
+			display: inline-block;
+			width: 100%;
+			margin-left: 0;
+			text-align: center;
+			vertical-align: top;
+			border-bottom: solid 1px $default-border-color;
+    		margin-bottom: $default-margin;
+		}
+	}
+
+	.book-block {
+		width: 90%;
+		margin: 5%;
+	}
+
+	#settings-form {
+		width: 90%;
+	}
+}
