@@ -407,6 +407,47 @@ button:hover {
 	}
 }
 
+#mobile-menu {
+	float: right;
+	width: 20%;
+	height: 100%;
+	cursor: pointer;
+	display: none;
+
+	img {
+		height: $main-menu-height*0.6;
+		margin-top: $main-menu-height*0.2;
+		float: right;
+		margin-right: $default-margin; 
+	}
+}
+
+.mobile-sub-menu {
+	position: fixed;
+	right: 0;
+	top: 102px;
+	width: 50%;
+	bottom: 0;
+	left: 100%;
+	background: $default-box-color;
+	padding: $default-padding;
+	border-left: solid 1px $default-border-color;
+	-webkit-transition: left 300ms; /* Safari */
+    transition: width left 300ms;
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+
+	li {
+		@extend .border-bottom;
+		min-height: $main-menu-height/2;
+		line-height: $main-menu-height/2;
+	}
+}
+
+.show-mobile-menu {
+	left: 50%;
+}
+
 #wrap-content {
 	width : 100%;
 	margin-top: $default-margin;
@@ -1711,6 +1752,15 @@ table#message-threads {
 
   	#right-head {
 
+  	}
+
+  	#main-menu {
+  		width: 80%;
+  		display: inline-block;
+  	}
+
+  	#mobile-menu {
+  		display: block;
   	}
 
   	#content {

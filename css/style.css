@@ -121,7 +121,7 @@ button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-eleme
 .number {
   color: #4c77a4; }
 
-.border-bottom, .comment-section .comment-meta, .profile-content #item-header-content {
+.border-bottom, .mobile-sub-menu li, .comment-section .comment-meta, .profile-content #item-header-content {
   border-bottom: 1px solid #cccccc; }
 
 .border-top, .comment-section #respond {
@@ -276,6 +276,40 @@ button:hover, .button:hover, input[type="submit"]:hover, #right-head .head-eleme
   #main-menu ul li:hover {
     background-color: #4c77a4;
     color: white; }
+
+#mobile-menu {
+  float: right;
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  display: none; }
+  #mobile-menu img {
+    height: 30px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 8px; }
+
+.mobile-sub-menu {
+  position: fixed;
+  right: 0;
+  top: 102px;
+  width: 50%;
+  bottom: 0;
+  left: 100%;
+  background: white;
+  padding: 8px;
+  border-left: solid 1px #cccccc;
+  -webkit-transition: left 300ms;
+  /* Safari */
+  transition: width left 300ms;
+  transition-timing-function: ease;
+  -webkit-transition-timing-function: ease; }
+  .mobile-sub-menu li {
+    min-height: 25px;
+    line-height: 25px; }
+
+.show-mobile-menu {
+  left: 50%; }
 
 #wrap-content {
   width: 100%;
@@ -1179,6 +1213,13 @@ table#message-threads {
   #main-search {
     width: 100%;
     margin-left: 8px; }
+
+  #main-menu {
+    width: 80%;
+    display: inline-block; }
+
+  #mobile-menu {
+    display: block; }
 
   #content {
     width: 100%; }

@@ -43,6 +43,11 @@ $(document).ready(function() {
         });
     });
 
+    $("#mobile-menu img").click(function() {
+        $(".mobile-sub-menu").toggleClass('show-mobile-menu');
+        return false;
+    });
+
 });
 
 
