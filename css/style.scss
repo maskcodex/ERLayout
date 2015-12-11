@@ -1677,6 +1677,45 @@ table#message-threads {
 }
 
 
+
+/*********************** SEARCH AUTOCOMPLETE *****************/
+
+.ui-menu .ui-menu-item {
+	img {
+		width: 20px;
+		height: 20px;
+		float: left;
+		padding: $default-padding/2;
+	}
+	line-height: $default-action-image !important;
+	min-height: $default-action-image !important;
+}
+
+.ui-widget-content a {
+	font-size: inherit !important;
+	color: $dark-color !important;
+}
+
+.ui-widget {
+	font-size: 0.8em !important;
+	color: $dark-color !important;
+
+}
+
+.ui-state-focus {
+	background: $main-color !important;
+	color: $h-color !important;
+	border: none !important;
+
+	a {
+		color: $h-color !important;
+	}
+}
+
+.ui-widget-content {
+	background: $default-box-color !important;
+}
+
 /************************ REPONSIVE *************************/
 
 @media screen and (max-width: 1024px) {

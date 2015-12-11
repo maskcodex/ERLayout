@@ -52,34 +52,60 @@ $(document).ready(function() {
 
 
 $(function() {
-    var availableTags = [
-        "ActionScript",
-        "AppleScript",
-        "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme"
-    ];
+    var projects = [{
+        value: "toi thay hoa vang tren co xanh",
+        name: "Tôi thấy hoa vàng trên cỏ xanh",
+        icon: "new-book-icon.png",
+        href: "http://maskcodex.com/"
+    }, {
+        value: "dao cua vat ly",
+        name: "Đạo của vật lý",
+        icon: "share-book-icon.png",
+        href: "http://maskcodex.com/"
+    }, {
+        value: "bi quyet tan gai dinh",
+        name: "Bí quyết tán gái đỉnh",
+        icon: "twitter-icon.png",
+        href: "http://maskcodex.com/"
+    }, {
+        value: "vu dep trai",
+        name: "MASK Codex Đẹp trai khỏi phải bàn cãi gì hết",
+        icon: "youtube-icon.png",
+        href: "http://maskcodex.com/"
+    }];
 
     $("#main-search").autocomplete({
-        source: availableTags
-    });
+            /* {
+      source: function( request, response ) {
+        $.ajax({
+          url: "http://gd.geobytes.com/AutoCompleteCity",
+          dataType: "jsonp",
+          data: {
+            q: request.term
+          },
+          success: function( data ) {
+            response( data );
+          }
+        });
+      },*/
+            source: projects,
+            minLength: 0,
+
+            focus: function(event, ui) {
+                $("#main-search").val(ui.item.name);
+                return false;
+            },
+            select: function(event, ui) {
+                $("#main-search").val(ui.item.name);
+                return false;
+            }
+        })
+        .autocomplete("instance")._renderItem = function(ul, item) {
+            return $("<li>")
+                .append("<img src='images/" + item.icon + "'>")  // đổi link
+                .append("<a href='" + item.href + "'>" + item.name + "</a>")
+                .appendTo(ul);
+        };
 });
 
 
